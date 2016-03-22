@@ -1,0 +1,39 @@
+﻿<div class="fondoPages">
+    <img src="../Content/img/disi_peq.png" />
+    <div class="panel panel-default">
+        <div class="fondosHeader">Formato de Contacto</div>
+        <form name="formEnvia" class="panel-body">
+            <div class="form-group">
+                <input class="form-control" placeholder="Empresa" name="empresa" ng-model="empresa"  type="text" required>
+                <!--<span class="titulos" ng-show="formEnvia.empresa.$error.required">Indique la Empresa..</span>-->
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Ocupación" name="ocupacion" ng-model="ocupacion" type="text" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Nombre de Contacto" name="nombreContacto"  ng-model="nombreContacto" type="text" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Correo Electrónico" name="correo" ng-model="correo" type="text" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Teléfono Fijo" name="telFijo" ng-model="telFijo" type="text" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="Teléfono Celular" name="telCel" ng-model="telCel" type="text" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="¿A qué se dedica?" name="comentario" ng-model="comentario" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg" ng-click="enviar()">Enviar</button>
+            </div>
+            <div>
+                <alert ng-repeat="alert in alerts" type="{{alert.type}}" dismiss-on-timeout="6000" close="closeAlert($index)">{{alert.msg}}</alert>
+            </div>
+            <div class="form-group">
+                <img src="../Content/img/chat-icon.png" />
+            </div>
+        </form>
+    </div>
+</div>

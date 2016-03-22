@@ -1,0 +1,57 @@
+﻿<!-- Main -->
+<div class="fondoPages">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="wrapper style1">
+        <div class="container">
+            <alert ng-repeat="alert in alerts" type="{{alert.type}}" dismiss-on-timeout="5000" close="closeAlert($index)">{{alert.msg}}</alert>
+        </div>
+
+        <div class="container">
+            <div class="banner">
+                <div id="content">
+                    <article id="main">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading"><h3>FORMATO DE CONTACTO</h3></div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <input id="empresa" class="form-control"
+                                           placeholder="Empresa" name="j_username" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input id="nomContacto" class="form-control"
+                                           placeholder="Nombre de Contacto" name="j_username" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input id="correo" class="form-control"
+                                           placeholder="Correo Electrónico" name="j_username" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input id="telefonoFijo" class="form-control"
+                                           placeholder="Teléfono Fijo" name="j_username" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input id="telefonoCelular" class="form-control"
+                                           placeholder="Teléfono Celular" name="j_username" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="¿A qué se dedica?" rows="5" id="deica"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-lg" ng-click="addAlert()">E N V I A R</button>
+                            </div>
+                        </div>
+                        <!-- <a><img align="right" src="images/formulario.png"/></a> -->
+                        <section>
+                            <p>
+
+                            </p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

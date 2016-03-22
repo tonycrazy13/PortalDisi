@@ -1,0 +1,44 @@
+﻿<div class="fondoPages">
+    <img src="img/disi_peq.png" />
+    <div class="panel panel-default">
+        <div class="fondosHeader">Formato de Contacto</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <input class="form-control"
+                       placeholder="Empresa" ng-model="empresa"  type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control"
+                       placeholder="Ocupación" ng-model="ocupacion" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control"
+                       placeholder="Nombre de Contacto" ng-model="nombreContacto" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control"
+                       placeholder="Correo Electrónico" ng-model="correo" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control"
+                       placeholder="Teléfono Fijo" ng-model="telFijo" type="text">
+            </div>
+            <div class="form-group">
+                <input class="form-control"
+                       placeholder="Teléfono Celular" ng-model="telCel" type="text">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="¿A qué se dedica?" ng-model="comentario" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary btn-lg" ng-click="enviar()">Enviar</button>
+            </div>
+            <div>
+                <alert ng-repeat="alert in alerts" type="{{alert.type}}" dismiss-on-timeout="6000" close="closeAlert($index)">{{alert.msg}}</alert>
+            </div>
+            <div class="form-group">
+                <img src="img/chat-icon.png" />
+            </div>
+        </div>
+    </div>
+</div>
