@@ -35,7 +35,7 @@ var app = angular.module("myApp", ['ngCookies',
                                    'ui.grid.resizeColumns',
                                    'ui.grid.autoResize',
                                    'myApp.services']);
-
+/**
 app.config(function ($routeProvider) {
     $routeProvider
 	    .when("/", {
@@ -50,6 +50,7 @@ app.config(function ($routeProvider) {
 	        redirectTo: '/'
 	    });
 })
+**/
 app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales, Campanias) {
 
     $scope.alerts = [];

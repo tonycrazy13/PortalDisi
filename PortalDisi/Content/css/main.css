@@ -1,5 +1,16 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+/**@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("font-awesome.min.css");
+    */
+
+@font-face {
+    font-family: "HelveticaDisi";
+    src: url("../fonts/HelveticaNeueLTStd-Md.otf") format("otf")
+}
+@font-face {
+    font-family: "HelveticaDisiBold";
+    src: url("../fonts/HelveticaNeueLTStd-Bd.otf") format("otf")
+}
+
 
 /*
 	Helios by HTML5 UP
