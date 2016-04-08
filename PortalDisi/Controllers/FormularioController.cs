@@ -65,7 +65,7 @@ namespace PortalDisi.Controllers
                 return e.Message ;
             }
             MailDisi mail = new MailDisi(); 
-            mail.send(form.correo, form.nombre, form.comentarios);
+            mail.send(form);
 
             int sequence = db.Database.SqlQuery<int>("SELECT DISIOPERACIONES.CAT_FORMULARIO_SEQ.NEXTVAL FROM DUAL").FirstOrDefault();
             db.Formularios.Add(form);

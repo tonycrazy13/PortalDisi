@@ -11,7 +11,7 @@
 	position: relative;
 	background-image: url("../img/fondo.jpg");
     background-repeat: repeat;
-	background-size: cover;
+	background-size: auto;
 	background-position: center center;
 	background-attachment: fixed;
 	color: #fff;
@@ -84,43 +84,55 @@
 }
 
 .titulosGra {
-	font-family: HelveticaDisi;
-    font-size: 30px;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
 	color: #00a3e3;
 }
 
 .titulosGraBold {
-	font-family: HelveticaDisiBold;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: bold;
     font-size: 35px;
 	color: #00a3e3;
 }
 
 .titulos {
-	font-family: HelveticaDisi;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
 	color: #00a3e3;
 }
 .titulosPeq {
-	font-family: HelveticaDisi;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
 	color: #00a3e3;
 }
 
 .labelAzul {
-	font-family: HelveticaDisi;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	color: #00a3e3;
     font-size: 18px;
 }
 
+.titulosBlanco10 {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+	color: white;
+}
+
+.titulosBlanco15 {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+	color: white;
+}
+
 .titulosBlanco {
-	font-family: HelveticaDisi;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
 	color: white;
 }
 .titulosBlancoBold {
-	font-family: HelveticaDisiBold;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
 	color: white;
@@ -160,4 +172,50 @@
 .centerBody{
     align-content:center;
 }
+
+.fillImage {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: 100%;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.campaniasStyle {
+  padding: 0.5em 1em 0.5em 0.5em;
+}
+
+
+
+#anima {
+	margin: 0 auto;
+}
+
+#anima img {
+	margin: 20px;
+	border: 5px solid #eee;
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+#anima img:hover {
+	-webkit-transform: rotate(-7deg);
+	-moz-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+}
+
+
+
 

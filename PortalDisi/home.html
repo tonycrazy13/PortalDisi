@@ -50,8 +50,9 @@
 					<li><a class="page-scroll" href="#solucion">Solución</a></li>
 					<li><a class="page-scroll" href="#productos">Productos de Financiamiento </a></li>
 					<li><a class="page-scroll" href="#nosotros">Nosotros</a></li>
+                    <li><a class="page-scroll" href="#preguntas">Faq</a></li>
 					<li><a class="page-scroll" href="#aqui">Aqui esta la solución</a></li>
-					<li><a class="page-scroll" href="#page-top"><img src="Content/img/login.png" /></a></li> 
+					<li><a class="page-scroll glyphicon glyphicon-user" href="#page-top"></a></li> 
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -78,11 +79,13 @@
                             <img src="Content/img/LOGO_DISI.png" alt="Tradeaux">
                         </div>
                     </div>
+                    <br />
                     <div class="col-md-6 col-sm-6 offer1 slideanim">
                         <div class="offer-info titulos">
-                            <p>Brindamos facilidades a nuestros clientes para que puedan realizar negociaciones de compra y venta de facturas en línea.</p>
+                            <p>BRINDAMOS FACILIDADES A NUESTROS CLIENTES PARA QUE PUEDAN REALIZAR NEGOCIACIONES DE COMPRA Y VENTA DE FACTURAS EN LINEA.</p>
                         </div>
                     </div>
+                    <br />
                     <div class="col-md-6 col-sm-6 offer1 slideanim">
                         <div class="offer-info">
                             <h4>
@@ -94,7 +97,7 @@
                     <table><tr><td align="center">
                         <div class="img-responsive" alt="Personas">
                             <a href="#page-top">
-                                <img class="img-responsive" alt="Personas" src="Content/img/personas.jpg" />
+                                <img class="img-responsive animated" alt="Personas" src="Content/img/personas.png" />
                             </a>
                             <div class="col-xs-14 col-xs-offset-4">
                                 <a class="page-scroll" href="#herramientas"><img class="herramientas" width="200" height="90" /></a>
@@ -401,138 +404,132 @@
             </div>
         </div>
     </section>
-        <!-- Slider -->
-        <div class="container" id="herramientas">
-            <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 600px; overflow: hidden;">
-                <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                    <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+    <!-- Slider -->
+    <div class="container" id="herramientas">
+        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 600px; overflow: hidden;">
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 
-                background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
-                    </div>
-                    <div style="position: absolute; display: block;
-
-                top: 0px; left: 0px;width: 100%;height:100%;">
-                    </div>
+            background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
                 </div>
-                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;">
-                    <div><img u="image" src="Content/img/carrusel/img_contactar.jpg" alt="Contactar" /></div>
-                    
-                    <!--
-                    <div><img u="image" src="Content/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
-                    <div><img u="image" src="Content/img/carrusel/img_creditoSimple.jpg" alt="Credito Simple" /></div>
-                    <div><img u="image" src="Content/img/carrusel/img_estadoCuenta.jpg" alt="Estado de Cuenta" /></div>
-                    <div><img u="image" src="Content/img/carrusel/img_factoraje.jpg" alt="Factoraje" /></div>
-                    <div><img u="image" src="Content/img/carrusel/img_ordenCompra.jpg" alt="Orden de Compra" /></div>
-                    <div><img u="image" src="Content/img/carrusel/img_pagos.jpg" alt="Pagos" /></div>
-                    <div><img u="image" src="Content/img/carrusel/img_revolvente.jpg" alt="Revolvente" /></div>
+                <div style="position: absolute; display: block;
 
-
-                        <div class="col-xs-2 col-sm-2 offer1 slideanim">
-                            <div class="offer-icon">
-                                <header class="offer-info">
-                                    <h4>{{campa.titulo}}</h4>
-                                    <p>{{campa.mensaje}}</p>
-                                    <button class="btn btn-danger" ng-click="formularioDetalle({{campa}});">MAS INFORMACION</button>
-                                </header>
-                                <footer>
-                                    <img class="img-responsive" src="Content/img/carrusel/campanias/{{campa.imagen}}" alt="Aquí">
-                                </footer>
-                            </div>
-                        </div>
-
-
+            top: 0px; left: 0px;width: 100%;height:100%;">
+                </div>
+            </div>
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;"
+                 ng-controller="ctrlCarusel">
+                <!--
+                <div><img u="image" src="Content/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
+                <div><img u="image" src="Content/img/carrusel/img_creditoSimple.jpg" alt="Credito Simple" /></div>
+                <div><img u="image" src="Content/img/carrusel/img_estadoCuenta.jpg" alt="Estado de Cuenta" /></div>
+                <div><img u="image" src="Content/img/carrusel/img_factoraje.jpg" alt="Factoraje" /></div>
+                <div><img u="image" src="Content/img/carrusel/img_ordenCompra.jpg" alt="Orden de Compra" /></div>
+                <div><img u="image" src="Content/img/carrusel/img_pagos.jpg" alt="Pagos" /></div>
+                <div><img u="image" src="Content/img/carrusel/img_revolvente.jpg" alt="Revolvente" /></div>
                     -->
-                    <section >
-                        <div data-ng-repeat="campa in campanias"><img u="{{campa.titulo}}" src="Content/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
-                    </section>
-                    
-                    <!--
-                    <div >
-                        <table >
+                <div ng-repeat="image in allimages.campa">
+                    <div u="image" class="fillImage"
+                         style="background-image: url(Content/img/carrusel/campanias/{{image.content.image}});">
+                        <table>
                             <tr>
-                                <td align="center">
-                        -->
-                                    
-                        <!--
+                                <td>
+                                    <br />
+                                    <p class="campaniasStyle titulosGraBold">{{image.content.title}}</p>
+                                    <br />
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br />
+                                    <p class="campaniasStyle titulosGra 6u">{{image.content.mensaje}}</p>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br /><br /><br />
+                                    <button class="btn btn-danger campaniasStyle" ng-click="formularioDetalle({{image.content}});">MAS INFORMACION</button>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                    -->
                 </div>
-                <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
-                    <!-- bullet navigator item prototype -->
-                    <div u="prototype"></div>
-                </div>
-                <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"></span>
-                <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"></span>
             </div>
+            <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"></div>
+            </div>
+            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"></span>
+            <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"></span>
         </div>
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="8u">
-                        <section id="features" class="container special">
-                            <div class="row">
-                                <article class="12u(mobile) special" data-ng-repeat="sucu in sucursales">
-                                    <header>
-                                        <h5><a href="#page-top">{{sucu.titulo}}</a></h5>
-                                    </header>
-                                    <p align="center">
-                                        <img src="Content/img/LineaH.png">
-                                    <p>{{sucu.marcacion}}</p>
-                                    <p>{{sucu.tel1}}</p>
-                                    <p>{{sucu.tel2}}</p>
-                                    <p>{{sucu.tel3}}</p>
-                                </article>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="1u">
-                        <img src="Content/img/LineaV.png">
-                    </div>
-                    <div class="3u">
-                        <header>
-                            <h3 align="left">Contacto</h3>
-                        </header>
-                        <p>
-                            <a href="mailto:disi@disioperaciones.com" id="mail" class="icon ">disi@disioperaciones.com</a>
-                        </p>
-                        <header>
-                            <h3 align="left">Encuentranos</h3>
-                        </header>
-                        <p>
-                            <ul class="icons">
-                                <li><a href="https://twitter.com/DisiCredito" class="icon fa fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="https://www.facebook.com/Disicredito" class="icon fa fa-facebook"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="icon fa fa-instagram"><span class="label">Instagram</span></a></li>
-                                <li><a href="#" class="icon fa fa-linkedin"><span class="label">Linkedin</span></a></li>
-                            </ul>
-                        </p>
-                    </div>
+    </div>
+    
+    <br />
 
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="8u">
+                    <section id="features" class="container special">
+                        <div class="row 8u">
+                            <article class="12u(mobile) special" data-ng-repeat="sucu in sucursales">
+                                <header>
+                                    <h3><a href="#page-top">{{sucu.titulo}}</a></h3>
+                                </header>
+                                <p align="center">
+                                    <img src="Content/img/LineaH.png">
+                                <p class="titulosBlanco15">{{sucu.marcacion}}</p>
+                                <p class="titulosBlanco15">{{sucu.tel1}}</p>
+                                <p class="titulosBlanco15">{{sucu.tel2}}</p>
+                                <p class="titulosBlanco15">{{sucu.tel3}}</p>
+                            </article>
+                        </div>
+                    </section>
                 </div>
-            </div>
-            <!-- Copyright -->
-            <div class="container" align="center">
-                <ul class="menu">
-                    <li><a href="Content/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a></li>
-                    <li><a href="Content/pdf/jsf.pdf" target="_blank">UNE</a></li>
-                    <li><a href="Content/pdf/jsf.pdf" target="_blank">CONDUSEF</a></li>
-                    <li><a href="Content/pdf/jsf.pdf" target="_blank">CNBV</a></li>
-                    <li><a href="Content/pdf/jsf.pdf" target="_blank">SHCP</a></li>
-                </ul>
-                <br />
-                <ul class="menu titulosBlanco">
-                    <li class="row">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada en la CONDUSEF Y CNBV</li>
-                </ul>
+                <div class="1u">
+                    <img src="Content/img/LineaV.png">
+                </div>
+                <div class="3u">
+                    <header>
+                        <h3 align="left">Contacto</h3>
+                    </header>
+                    <p>
+                        <a href="mailto:disi@disioperaciones.com" id="mail" class="icon titulosBlanco15">disi@disioperaciones.com</a>
+                    </p>
+                    <header>
+                        <h3 align="left">Encuentranos</h3>
+                    </header>
+                    <p>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/DisiCredito" class="icon fa fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/Disicredito" class="icon fa fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon fa fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+                        </ul>
+                    </p>
+                </div>
+
             </div>
         </div>
-        <!--
-        <a class="page-scroll" href="#page-top">
-            <span style="opacity: 1;"><img src="Content/img/flecha.png" style="position: fixed; bottom: 2px; opacity: 5; right: 1%;" /></span>
-        </a>
-        -->
+        <br />
+        <!-- Copyright -->
+        <div class="container" align="center">
+            <ul class="menu">
+                <li><a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a></li>
+                <li><a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">UNE</a></li>
+                <li><a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CONDUSEF</a></li>
+                <li><a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CNBV</a></li>
+                <li><a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">SHCP</a></li>
+            </ul>
+            <br />
+            <ul class="menu titulosBlanco15">
+                <li class="row">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada en la CONDUSEF Y CNBV</li>
+            </ul>
+        </div>
+    </div>
+      
         <!-- jQuery -->
         <script src="Content/js/jquery.js"></script>
         <!-- Angular Controller -->
@@ -545,7 +542,6 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-cookies.min.js"></script>
 
         <script src="Scripts/bootstrap.min.js"></script>
-        <script src="Scripts/move-top.js"></script>
 
         <script src="//cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/release/3.0.6/ui-grid.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
@@ -566,21 +562,6 @@
         <script src="Content/js/ie10-viewport-bug-workaround.js"></script>
         <script src="Content/js/jssor.slider.mini.js"></script>
         <script src="Content/js/slider.js"></script>
-        <script>
-
-            $(document).ready(function () {
-                /*
-                var defaults = {
-                    containerID: 'toTop', // fading element id
-                    containerHoverID: 'toTopHover', // fading element hover id
-                    scrollSpeed: 1200,
-                    easingType: 'linear'
-                };
-                */
-                $().UItoTop({ easingType: 'easeOutQuart' });
-            });
-
-        </script>
 </body>
 
 </html>

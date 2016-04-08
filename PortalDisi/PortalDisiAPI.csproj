@@ -326,6 +326,7 @@
     <Content Include="Content\img\LOGO_DISI2.png" />
     <Content Include="Content\img\map-marker.png" />
     <Content Include="Content\img\personas.jpg" />
+    <Content Include="Content\img\personas.png" />
     <Content Include="Content\img\s_face.png" />
     <Content Include="Content\img\s_in.png" />
     <Content Include="Content\img\s_insta.png" />

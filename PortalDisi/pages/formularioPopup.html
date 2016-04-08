@@ -1,17 +1,18 @@
 ﻿<div class="fondoPages">
     <img src="../Content/img/disi_peq.png" />
+    <h2>FORMATO DE CONTACTO</h2>
     <div class="panel panel-default">
-        <div class="fondosHeader">Formato de Contacto</div>
+        <div class="fondosHeader titulosBlanco">FORMATO DE CONTACTO</div>
         <form name="formEnvia" class="panel-body">
             <div class="form-group">
                 <input class="form-control" placeholder="Empresa" name="empresa" ng-model="empresa"  type="text" required>
                 <!--<span class="titulos" ng-show="formEnvia.empresa.$error.required">Indique la Empresa..</span>-->
             </div>
             <div class="form-group">
-                <input class="form-control" placeholder="Ocupación" name="ocupacion" ng-model="ocupacion" type="text" required>
+                <input class="form-control titulosBlanco10" placeholder="Ocupación" name="ocupacion" ng-model="ocupacion" type="text" required>
             </div>
             <div class="form-group">
-                <input class="form-control" placeholder="Nombre de Contacto" name="nombreContacto"  ng-model="nombreContacto" type="text" required>
+                <input class="form-control titulosBlanco10" placeholder="Nombre de Contacto" name="nombreContacto"  ng-model="nombreContacto" type="text" required>
             </div>
             <div class="form-group">
                 <input class="form-control" placeholder="Correo Electrónico" name="correo" ng-model="correo" type="text" required>
@@ -26,7 +27,7 @@
                 <textarea class="form-control" placeholder="¿A qué se dedica?" name="comentario" ng-model="comentario" rows="5" required></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg" ng-click="enviar()">Enviar</button>
+                <button type="submit" class="btn btn-primary btn-lg" button-spinner="loading" ng-click="enviar()">Enviar</button>
             </div>
             <div>
                 <alert ng-repeat="alert in alerts" type="{{alert.type}}" dismiss-on-timeout="6000" close="closeAlert($index)">{{alert.msg}}</alert>

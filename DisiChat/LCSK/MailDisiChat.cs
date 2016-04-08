@@ -4,13 +4,12 @@ using System.Net.Mail;
 using System.Net.Mime;
 using System.Threading;
 using System.ComponentModel;
-using PortalDisi.Models;
 
-namespace PortalDisi.Utilerias
+namespace DisiChat.LCSK
 {
-    public class MailDisi
+    public class MailDisiChat
     {
-        public void send(Formulario form)
+        public void send(string fromMail, string mensaje)
         {
             var mail = new MailMessage();
 
@@ -19,19 +18,11 @@ namespace PortalDisi.Utilerias
             
             mail.To.Add("luis.gonzalez@arkingsoft.com");//Fijo DISI
             //mail.To.Add("disi@disioperaciones.com");//Fijo DISI
-            mail.To.Add(form.correo);
+            mail.To.Add(fromMail);
 
-            mail.Subject = "Información de Factoraje DiSí " + form.nombre;
+            mail.Subject = "DiSí Chat - Contacto Desconectado";
             mail.IsBodyHtml = true;
-            string htmlBody;
-            htmlBody = "\n EMPRESA:" + form.empresa;
-            htmlBody += "\n OCUPACION:" + form.ocupacion;
-            htmlBody += "\n NOMBRE DE CONTACTO:" + form.nombre;
-            htmlBody += "\n TELEFONO FIJO:" + form.tel;
-            htmlBody += "\n TELEFONO CELULAR:" + form.celular;
-            htmlBody += "\n \n" + form.comentarios;
-            mail.Body = htmlBody;
-
+            mail.Body = "Recibió un contacto sin conexión desde el chat DiSí.\r\n\r\n" + mensaje;
 
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
             SmtpServer.Port = 587;
