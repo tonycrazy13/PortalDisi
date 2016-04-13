@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -38,7 +38,7 @@
                     <i class="fa fa-bars"></i>
 				</button>
 				<a class="navbar-brand page-scroll"  href="#page-top"
-					style="padding-top: 8px;"><img class="navbar-brand" src="Content/img/LOGO_DISI2.png" style="padding-top: 0; margin-top: 0;">
+					style="padding-top: 7px;"><img class="navbar-brand" src="Content/img/LOGO_DISI2.png" style="padding-top: 0; margin-top: 0;">
 				</a>
 			</div>
 
@@ -65,7 +65,9 @@
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <div class="row">
                 <div class="col-xs-10 col-xs-offset-4">
-                    <a class="page-scroll" href="#brindamos"><img class="inicio" width="200" height="90" /></a>
+                    <a class="page-scroll" href="#brindamos">
+                        <img class="inicio" width="200" height="90" style="border:hidden" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -97,7 +99,7 @@
                     <table><tr><td align="center">
                         <div class="img-responsive" alt="Personas">
                             <a href="#page-top">
-                                <img class="img-responsive animated" alt="Personas" src="Content/img/personas.png" />
+                                <img style="height:300px; width:80%" class="img-responsive animated" alt="Personas" src="Content/img/personas.png" />
                             </a>
                             <div class="col-xs-14 col-xs-offset-4">
                                 <a class="page-scroll" href="#herramientas"><img class="herramientas" width="200" height="90" /></a>
@@ -109,57 +111,126 @@
         </div>
     </section>
 
-    <section class="fondoDetalles">
+    <section class="fondoProblema">
         <div id="problema">
-            <br /><br />
-            <div class="left">
-                <img class="img-responsive" src="Content/img/detalles/problema.png">
+            <div class="row">
+                <div class="col-xs-14 col-xs-offset-4">
+                    <div class="transpDisi">
+                        <img class="img-responsive animated" src="Content/img/detalles/texto_problema.png" />
+                    </div>
+                    <br />
+                </div>
+                <div class="col-xs-8 col-xs-offset-6">
+                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/btn_problema.png" /></a>
+                    <br />
+                </div>            
             </div>
-            <br />
-            <table>
-                <tr>
-                    <td align="center">
-                        <div class="titulos">
-                            <div>
-                                <p class="text-center">¿Vendes a tus clientes a 30, 60 o hasta 120 días?</p>
-                                <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
-                                <p class="text-center"> ¿Estás con problemas por que no tienes tu dinero?</p>
-                                <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
-                                <p class="text-center"> ¿Necesitas liquidez para crecer tu negocio?</p>
-                                <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
-                            </div>
-                            <br />
-                            <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/oprime_aqui.png" /></a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
         </div>
+    </section>
+
+    <section class="fondoSolucion">
         <div id="solucion">
-            <br /><br />
-            <div>
-                <img class="img-responsive" src="Content/img/detalles/solucion.png">
+            <div class="row">
+                <div class="col-xs-14 col-xs-offset-4">
+                    <div class="transpDisi">
+                        <img class="img-responsive animated" src="Content/img/detalles/texto_solucion.png" />
+                    </div>
+                    <br />
+                </div>
+                <div class="col-xs-8 col-xs-offset-6">
+                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/btn_solucion.png" /></a>
+                    <br />
+                </div>
             </div>
-            <br />
-            <table>
-                <tr>
-                    <td align="center">
-                        <div class="titulos">
-                            <div>
-                                <p class="text-center"> Convierte tus ventas a crédito en efectivo en tu cuenta.</p>
-                                <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
-                                <p class="text-center"> Descuenta tus facturas a través del Factoraje Disí.</p>
-                                <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
-                                <p class="text-center"> Te ofrecemos una herramienta fácil, rápida y segura.</p>
-                                <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
-                            </div>
-                            <br />
-                            <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/solucionF.png" /></a>
-                        </div>
-                    </td>
-                </tr>
-            </table>
         </div>
+    </section>
+ <section class="fondoProductosFinan">
+        <div id="productos">
+            <div class="row">
+                <div class="col-xs-14 col-xs-offset-4">
+                    <div class="transpDisi">
+                        <img class="img-responsive animated" src="Content/img/detalles/texto_pf.png" />
+                    </div>
+                    <br />
+                </div>
+                <div class="col-xs-8 col-xs-offset-6">
+                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/btn_problema.png" /></a>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div id="productos2">
+            <div class="row">
+                <div class="col-xs-14 col-xs-offset-4">
+                    <div class="transpDisi">
+                        <img class="img-responsive animated" src="Content/img/detalles/texto_pf2.png" />
+                    </div>
+                    <br />
+                </div>
+                <div class="col-xs-8 col-xs-offset-6">
+                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/btn_solucion.png" /></a>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fondoNosotros">
+        <div id="nosotros">
+            <div class="row">
+                <div class="col-xs-14 col-xs-offset-3">
+                    <div class="transpDisi">
+                        <img class="img-responsive animated" src="Content/img/detalles/texto_nosotros.png" />
+                    </div>
+                    <br />
+                </div>
+                <div class="col-xs-8 col-xs-offset-6">
+                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/btn_problema.png" /></a>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fondoPreguntas">
+        <div id="preguntas">
+            <div class="row">
+                <div class="col-xs-14 col-xs-offset-2">
+                    <div>
+                        <img class="img-responsive animated" src="Content/img/detalles/texto_preguntas.png" />
+                    </div>
+                    <br />
+                </div>
+                <div class="col-xs-8 col-xs-offset-6">
+                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/btn_problema.png" /></a>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+    <section id="solucion">
+        <br /><br />
+        <div>
+            <img class="img-responsive" src="Content/img/detalles/solucion.png">
+        </div>
+        <br />
+        <table>
+            <tr>
+                <td align="center">
+                    <div class="titulos">
+                        <div>
+                            <p class="text-center"> Convierte tus ventas a crédito en efectivo en tu cuenta.</p>
+                            <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
+                            <p class="text-center"> Descuenta tus facturas a través del Factoraje Disí.</p>
+                            <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
+                            <p class="text-center"> Te ofrecemos una herramienta fácil, rápida y segura.</p>
+                            <img class="img-responsive" src="Content/img/detalles/linea_azul.png" />
+                        </div>
+                        <br />
+                        <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Content/img/detalles/solucionF.png" /></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </section>
 
     <section class="fondoPages" id="productos">
@@ -379,7 +450,7 @@
         </div>
         <h1></h1>
     </div>
-
+    -->
     <section id="aqui">
         <div class="offer slideanim">
             <div class="fondoPages row">
@@ -405,66 +476,69 @@
         </div>
     </section>
     <!-- Slider -->
-    <div class="container" id="herramientas">
-        <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 600px; overflow: hidden;">
-            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+    <section class="fondoPages" id="herramientas">
+        <div class="container" id="herramientas">
+            <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 600px; overflow: hidden;">
+                <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                    <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 
             background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
-                </div>
-                <div style="position: absolute; display: block;
+                    </div>
+                    <div style="position: absolute; display: block;
 
             top: 0px; left: 0px;width: 100%;height:100%;">
-                </div>
-            </div>
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;"
-                 ng-controller="ctrlCarusel">
-                <!--
-                <div><img u="image" src="Content/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
-                <div><img u="image" src="Content/img/carrusel/img_creditoSimple.jpg" alt="Credito Simple" /></div>
-                <div><img u="image" src="Content/img/carrusel/img_estadoCuenta.jpg" alt="Estado de Cuenta" /></div>
-                <div><img u="image" src="Content/img/carrusel/img_factoraje.jpg" alt="Factoraje" /></div>
-                <div><img u="image" src="Content/img/carrusel/img_ordenCompra.jpg" alt="Orden de Compra" /></div>
-                <div><img u="image" src="Content/img/carrusel/img_pagos.jpg" alt="Pagos" /></div>
-                <div><img u="image" src="Content/img/carrusel/img_revolvente.jpg" alt="Revolvente" /></div>
-                    -->
-                <div ng-repeat="image in allimages.campa">
-                    <div u="image" class="fillImage"
-                         style="background-image: url(Content/img/carrusel/campanias/{{image.content.image}});">
-                        <table>
-                            <tr>
-                                <td>
-                                    <br />
-                                    <p class="campaniasStyle titulosGraBold">{{image.content.title}}</p>
-                                    <br />
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <br />
-                                    <p class="campaniasStyle titulosGra 6u">{{image.content.mensaje}}</p>
-                                    <br />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <br /><br /><br />
-                                    <button class="btn btn-danger campaniasStyle" ng-click="formularioDetalle({{image.content}});">MAS INFORMACION</button>
-                                </td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
+                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;"
+                     ng-controller="ctrlCarusel">
+                    <div><img u="image" src="Content/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
+                    <div><img u="image" src="Content/img/carrusel/img_creditoSimple.jpg" alt="Credito Simple" /></div>
+                    <div><img u="image" src="Content/img/carrusel/img_estadoCuenta.jpg" alt="Estado de Cuenta" /></div>
+                    <div><img u="image" src="Content/img/carrusel/img_factoraje.jpg" alt="Factoraje" /></div>
+                    <div><img u="image" src="Content/img/carrusel/img_ordenCompra.jpg" alt="Orden de Compra" /></div>
+                    <div><img u="image" src="Content/img/carrusel/img_pagos.jpg" alt="Pagos" /></div>
+                    <div><img u="image" src="Content/img/carrusel/img_revolvente.jpg" alt="Revolvente" /></div>
+                    <div data-ng-repeat="obj in carusel.campania">
+                        <!--
+                        <div u="image" class="fillImage"
+                             style="background-image: url(Content/img/carrusel/campanias/{{obj.content.image}});">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <br />
+                                        <p class="campaniasStyle titulosGraBold">{{obj.content.title}}</p>
+                                        <br />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br />
+                                        <p class="campaniasStyle titulosGra 6u">{{obj.content.mensaje}}</p>
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="campaniasStyle">
+                                        <br /><br /><br />
+                                        <button class="btn btn-danger" ng-click="formularioDetalle({{obj.content}});">MAS INFORMACION</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <img u="image" src="Content/img/carrusel/campanias/{{obj.content.image}}" />
+                            -->
+                    </div>
+                </div>
+                <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
+                    <!-- bullet navigator item prototype -->
+                    <div u="prototype"></div>
+                </div>
+                <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"></span>
+                <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"></span>
             </div>
-            <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
-                <!-- bullet navigator item prototype -->
-                <div u="prototype"></div>
-            </div>
-            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"></span>
-            <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"></span>
         </div>
-    </div>
+    </section>
     
     <br />
 

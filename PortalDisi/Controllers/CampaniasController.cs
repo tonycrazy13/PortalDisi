@@ -13,9 +13,10 @@ namespace PortalDisi.Controllers
         private DisiContext db = new DisiContext();
 
         // GET api/<controller>
-        public IEnumerable<Campania> Get()
+        public List<Campania> Get()
         {
-            return db.Campanias.Where(c => c.activo == 1).ToList();
+            var list = db.Campanias.Where(c => c.activo == 1).ToList();
+            return list;
         }
 
         // GET api/<controller>/5

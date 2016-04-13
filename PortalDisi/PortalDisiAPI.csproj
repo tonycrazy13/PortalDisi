@@ -233,6 +233,13 @@
     <Compile Include="Models\Sucursal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="prueba.aspx.cs">
+      <DependentUpon>prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prueba.aspx.designer.cs">
+      <DependentUpon>prueba.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utilerias\MailDisi.cs" />
@@ -279,30 +286,32 @@
     <Content Include="Content\img\carrusel\img_pagos.jpg" />
     <Content Include="Content\img\carrusel\img_revolvente.jpg" />
     <Content Include="Content\img\chat-icon.png" />
-    <Content Include="Content\img\detalles\bannerProductos.jpg" />
+    <Content Include="Content\img\detalles\btn_pf.png" />
+    <Content Include="Content\img\detalles\btn_pf2.png" />
+    <Content Include="Content\img\detalles\btn_problema.png" />
+    <Content Include="Content\img\detalles\btn_solucion.png" />
     <Content Include="Content\img\detalles\contactanos.png" />
     <Content Include="Content\img\detalles\creditoSimpleImg.png" />
-    <Content Include="Content\img\detalles\fondoDetalleAzul.png" />
-    <Content Include="Content\img\detalles\fondoDetalleAzul2.png" />
-    <Content Include="Content\img\detalles\fondoDetalleGris.png" />
-    <Content Include="Content\img\detalles\fondoDetalleGris2.png" />
     <Content Include="Content\img\detalles\fondoDetalles.jpg" />
     <Content Include="Content\img\detalles\fondo_azul.jpg" />
+    <Content Include="Content\img\detalles\fondo_nosotros.jpg" />
+    <Content Include="Content\img\detalles\fondo_pf.jpg" />
+    <Content Include="Content\img\detalles\fondo_pf2.jpg" />
+    <Content Include="Content\img\detalles\fondo_preguntas.jpg" />
+    <Content Include="Content\img\detalles\fondo_problema.jpg" />
+    <Content Include="Content\img\detalles\fondo_solucion.jpg" />
     <Content Include="Content\img\detalles\imgProductos.png" />
     <Content Include="Content\img\detalles\linea_azul.png" />
-    <Content Include="Content\img\detalles\nosotros.png" />
     <Content Include="Content\img\detalles\oprime_aqui.png" />
-    <Content Include="Content\img\detalles\preguntas.png" />
     <Content Include="Content\img\detalles\preguntas_icono.png" />
-    <Content Include="Content\img\detalles\problema.png" />
-    <Content Include="Content\img\detalles\productos_financiamiento.png" />
-    <Content Include="Content\img\detalles\producto_texto.png" />
-    <Content Include="Content\img\detalles\producto_texto_2.png" />
     <Content Include="Content\img\detalles\solicita_aqui1.png" />
     <Content Include="Content\img\detalles\solicita_aqui2.png" />
-    <Content Include="Content\img\detalles\solucion.png" />
-    <Content Include="Content\img\detalles\solucionF.png" />
-    <Content Include="Content\img\detalles\solucionR.png" />
+    <Content Include="Content\img\detalles\texto_nosotros.png" />
+    <Content Include="Content\img\detalles\texto_pf.png" />
+    <Content Include="Content\img\detalles\texto_pf2.png" />
+    <Content Include="Content\img\detalles\texto_preguntas.png" />
+    <Content Include="Content\img\detalles\texto_problema.png" />
+    <Content Include="Content\img\detalles\texto_solucion.png" />
     <Content Include="Content\img\disi_peq.png" />
     <Content Include="Content\img\disi_peq2.png" />
     <Content Include="Content\img\downloads-bg.jpg" />
@@ -417,6 +426,7 @@
     <Content Include="home.html" />
     <Content Include="pages\detallePopup.html" />
     <Content Include="pages\formularioPopup.html" />
+    <Content Include="prueba.aspx" />
     <Content Include="Scripts\appAngularDisi.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

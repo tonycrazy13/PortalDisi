@@ -52,13 +52,18 @@ app.config(function ($routeProvider) {
 	    });
 })
 **/
-app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales) {
+app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales, Campanias) {
 
     $scope.alerts = [];
 
     Sucursales.query(function (data) {
         $scope.sucursales = data;
     });
+    /*
+    Campanias.query(function (data) {
+        $scope.campanias = data;
+    });
+    */
 
     $scope.addAlert = function (message) {
         $scope.alerts.push({ type: 'success', msg: message });
@@ -139,12 +144,13 @@ app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales) {
 
 });
 
-app.controller("ctrlCarusel", function ($scope, ngDialog, Campanias) {
+app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
 
-    $scope.allimages = { campa: [] };
-    $scope.allimages.campa.push({
+    $scope.carusel = { campania: [] };
+  
+    $scope.carusel.campania.push({
+        "pk": "e021f394-64af-42a8-88ae-daa013f74397",
         "content": {
-            "fields": ["title", "mensaje", "image", "titulodet", "infodet", "imagendet"],
             "title": "CAMPAÑA 2",
             "mensaje": "MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
             "image": "campa2.jpg",
@@ -153,33 +159,45 @@ app.controller("ctrlCarusel", function ($scope, ngDialog, Campanias) {
             "imagendet": "campa2.jpg"
         }
     });
-    $scope.allimages.campa.push({
+  
+    $scope.carusel.campania.push({
+        "pk": "e021f394-64af-42a8-88ae-daa013f74397",
         "content": {
-            "fields": ["title", "mensaje", "image", "titulodet", "infodet", "imagendet"],
-            "title": "CAMPAÑA 3",
+            "title": "CAMPAÑA 2",
             "mensaje": "MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
-            "image": "campa3.jpg",
-            "titulodet": "Titulo 3 Detalle",
+            "image": "campa1.jpg",
+            "titulodet": "Titulo 2 Detalle",
             "infodet": "INFO DETALLE MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
-            "imagendet": "campa3.jpg"
+            "imagendet": "campa2.jpg"
         }
     });
 
     /*
-    $scope.allimages.campa.push({
-        "content": {
-            "fields": ["title", "mensaje", "image", "titulodet", "infodet", "imagendet"],
-            "title": "CAMPAÑA 1",
-            "mensaje": "MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
-            "image": "campa1.jpg",
-            "titulodet": "Titulo 1 Detalle",
-            "infodet": "INFO DETALLE MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
-            "imagendet": "campa1.jpg"
-        }
-    });
-    */
-    
+    var hola = $scope.campanias;    
+     */
+    $http.get('/api/campanias')
+        .success(function (data) {
+            var cont = 99;
+            angular.forEach(data, function (campa) {
+                $scope.carusel.campania.push({
+                    "$$hashKey":"object:"+cont++,
+                    "pk": "e021f394-64af-42a8-88ae-daa013f74397"+cont++,
+                    "content": {
+                        "title": "CAMPAÑA 2",
+                        "mensaje": "MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
+                        "image": "campa1.jpg",
+                        "titulodet": "Titulo 2 Detalle",
+                        "infodet": "INFO DETALLE MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
+                        "imagendet": "campa2.jpg"
+                    }
+                });
+            });
+        })
+       .error(function (data) {
+           $scope.addError("Error al Enviar la Solicitud, intente mas tarde");
+       });
 
+    /*
     Campanias.query(function (data){ 
         $scope.campanias = data;
         var cont = 99;
@@ -198,4 +216,5 @@ app.controller("ctrlCarusel", function ($scope, ngDialog, Campanias) {
             });
         });
     }); 
+    */
 });
