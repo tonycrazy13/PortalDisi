@@ -64,6 +64,7 @@ app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales, Cam
         $scope.campanias = data;
     });
     */
+    $scope.carusel = { campania: [] };
 
     $scope.addAlert = function (message) {
         $scope.alerts.push({ type: 'success', msg: message });
@@ -142,12 +143,35 @@ app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales, Cam
         });
     }
 
+    $scope.onLoad = function () {
+
+        $http.get('/api/campanias')
+        .success(function (data) {
+            var cont = 99;
+            angular.forEach(data, function (campa) {
+                $scope.carusel.campania.push({
+                    "pk": "e021f394-64af-42a8-88ae-daa013f74397" + cont++,
+                    "content": {
+                        "title": campa.titulo,
+                        "mensaje": campa.mensaje,
+                        "image": campa.imagen,
+                        "titulodet": campa.titulodet,
+                        "infodet": campa.infodet,
+                        "imagendet": campa.imagendet
+                    }
+                });
+            });
+        })
+       .error(function (data) {
+           $scope.addError("Error al Enviar la Solicitud, intente mas tarde");
+       });
+    }
+
 });
 
 app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
-
-    $scope.carusel = { campania: [] };
   
+    /*
     $scope.carusel.campania.push({
         "pk": "e021f394-64af-42a8-88ae-daa013f74397",
         "content": {
@@ -171,24 +195,23 @@ app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
             "imagendet": "campa2.jpg"
         }
     });
-
     /*
-    var hola = $scope.campanias;    
-     */
+    */
+     
+    
     $http.get('/api/campanias')
         .success(function (data) {
             var cont = 99;
             angular.forEach(data, function (campa) {
                 $scope.carusel.campania.push({
-                    "$$hashKey":"object:"+cont++,
-                    "pk": "e021f394-64af-42a8-88ae-daa013f74397"+cont++,
+                    "pk": "e021f394-64af-42a8-88ae-daa013f74397" + cont++,
                     "content": {
-                        "title": "CAMPAÑA 2",
-                        "mensaje": "MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
-                        "image": "campa1.jpg",
-                        "titulodet": "Titulo 2 Detalle",
-                        "infodet": "INFO DETALLE MENSAJE MENSAJE MENSAJE MENSAJE MENSAJE",
-                        "imagendet": "campa2.jpg"
+                        "title": campa.titulo,
+                        "mensaje": campa.mensaje,
+                        "image": campa.imagen,
+                        "titulodet": campa.titulodet,
+                        "infodet": campa.infodet,
+                        "imagendet": campa.imagendet
                     }
                 });
             });
@@ -196,7 +219,7 @@ app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
        .error(function (data) {
            $scope.addError("Error al Enviar la Solicitud, intente mas tarde");
        });
-
+    /**/
     /*
     Campanias.query(function (data){ 
         $scope.campanias = data;

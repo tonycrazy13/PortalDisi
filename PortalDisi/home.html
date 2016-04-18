@@ -29,7 +29,7 @@
 <link href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.5.9/css/ngDialog-theme-default.min.css" rel="stylesheet" type="text/css">
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-ng-app="myApp" ng-controller="ctrlGeneric">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-ng-app="myApp" ng-controller="ctrlGeneric" ng-init="onLoad()">
 	<!-- Navigation -->
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -477,7 +477,7 @@
     </section>
     <!-- Slider -->
     <section class="fondoPages" id="herramientas">
-        <div class="container" id="herramientas">
+        <div class="container" id="herramientas" ng-controller="ctrlCarusel">
             <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 600px; overflow: hidden;">
                 <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                     <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
@@ -489,8 +489,8 @@
             top: 0px; left: 0px;width: 100%;height:100%;">
                     </div>
                 </div>
-                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;"
-                     ng-controller="ctrlCarusel">
+ 
+                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;">
                     <div><img u="image" src="Content/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
                     <div><img u="image" src="Content/img/carrusel/img_creditoSimple.jpg" alt="Credito Simple" /></div>
                     <div><img u="image" src="Content/img/carrusel/img_estadoCuenta.jpg" alt="Estado de Cuenta" /></div>
@@ -498,37 +498,33 @@
                     <div><img u="image" src="Content/img/carrusel/img_ordenCompra.jpg" alt="Orden de Compra" /></div>
                     <div><img u="image" src="Content/img/carrusel/img_pagos.jpg" alt="Pagos" /></div>
                     <div><img u="image" src="Content/img/carrusel/img_revolvente.jpg" alt="Revolvente" /></div>
-                    <div data-ng-repeat="obj in carusel.campania">
-                        <!--
-                        <div u="image" class="fillImage"
-                             style="background-image: url(Content/img/carrusel/campanias/{{obj.content.image}});">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <br />
-                                        <p class="campaniasStyle titulosGraBold">{{obj.content.title}}</p>
-                                        <br />
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <br />
-                                        <p class="campaniasStyle titulosGra 6u">{{obj.content.mensaje}}</p>
-                                        <br />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="left" class="campaniasStyle">
-                                        <br /><br /><br />
-                                        <button class="btn btn-danger" ng-click="formularioDetalle({{obj.content}});">MAS INFORMACION</button>
-                                    </td>
-                                </tr>
-                            </table>
+                    <div> 
+                            <div ng-repeat="obj in carusel.campania" u="image" class="fillImage" style="background-image: url(Content/img/carrusel/campanias/{{obj.content.image}});">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <br />
+                                            <p class="campaniasStyle titulosGraBold">{{obj.content.title}}</p>
+                                            <br />
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br />
+                                            <p class="campaniasStyle titulosGra 6u">{{obj.content.mensaje}}</p>
+                                            <br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" class="campaniasStyle">
+                                            <br /><br /><br />
+                                            <button class="btn btn-danger" ng-click="formularioDetalle({{obj.content}});">MAS INFORMACION</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                        <img u="image" src="Content/img/carrusel/campanias/{{obj.content.image}}" />
-                            -->
-                    </div>
                 </div>
                 <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
                     <!-- bullet navigator item prototype -->
