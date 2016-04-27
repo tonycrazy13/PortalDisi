@@ -31,7 +31,7 @@
                 <alert ng-repeat="alert in alerts" type="{{alert.type}}" dismiss-on-timeout="6000" close="closeAlert($index)">{{alert.msg}}</alert>
             </div>
             <div class="form-group">
-                <img src="../Content/img/chat-icon.png" />
+                <a href="" target="popup" onclick="window.open('http://localhost:86/','CHAT','width=600,height=400')"><img src="../Content/img/chat-icon.png" /></a>
             </div>
         </form>
     </div>

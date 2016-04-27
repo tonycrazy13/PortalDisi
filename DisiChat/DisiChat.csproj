@@ -157,6 +157,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\disi_peq.png" />
+    <Content Include="Content\img\fondo2.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -180,6 +182,7 @@
     <Content Include="LCSK\assets\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="LCSK\assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="LCSK\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\PublishProfiles\Chat.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -194,7 +197,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

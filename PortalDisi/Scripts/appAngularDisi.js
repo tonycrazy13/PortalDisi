@@ -36,6 +36,33 @@ var app = angular.module("myApp", ['ngCookies',
                                    'ui.grid.resizeColumns',
                                    'ui.grid.autoResize',
                                    'myApp.services']);
+
+             /*
+app.run(function ($rootScope) {
+    $http.get('/api/campanias')
+         .success(function (data) {
+             var cont = 99;
+             $scope.campanias = data;
+             angular.forEach(data, function (campa) {
+
+                 $scope.carusel.campania.push({
+                     "pk": "e021f394-64af-42a8-88ae-daa013f74397" + cont++,
+                     "content": {
+                         "title": campa.titulo,
+                         "mensaje": campa.mensaje,
+                         "image": campa.imagen,
+                         "titulodet": campa.titulodet,
+                         "infodet": campa.infodet,
+                         "imagendet": campa.imagendet
+                     }
+                 });
+             });
+         })
+        .error(function (data) {
+            $scope.addError("Error al Enviar la Solicitud, intente mas tarde");
+        });
+});
+                 */
 /**
 app.config(function ($routeProvider) {
     $routeProvider
@@ -170,7 +197,6 @@ app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales, Cam
 });
 
 app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
-  
     /*
     $scope.carusel.campania.push({
         "pk": "e021f394-64af-42a8-88ae-daa013f74397",
@@ -197,7 +223,6 @@ app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
     });
     /*
     */
-     
     
     $http.get('/api/campanias')
         .success(function (data) {
@@ -219,6 +244,7 @@ app.controller("ctrlCarusel", function ($scope, $http, ngDialog, Campanias) {
        .error(function (data) {
            $scope.addError("Error al Enviar la Solicitud, intente mas tarde");
        });
+    
     /**/
     /*
     Campanias.query(function (data){ 

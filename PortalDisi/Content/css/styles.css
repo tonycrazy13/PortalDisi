@@ -275,12 +275,19 @@
 }
 
 .transpDisi {
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  filter: alpha(opacity=60);
-  
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+}
+
+.chatDisi {
+    background-image: url("../img/chat-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
   /*
   background-color: rgba(0,0,0,.5) ;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorstr='#88ff0000', EndColorstr='#88ff0000');

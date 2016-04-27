@@ -22,3 +22,24 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.fondoChat {
+	position: relative;
+    background-image: url("img/fondo2.png");
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.imagenDisi {
+    position: relative;
+    background-image: url("img/disi_peq.png");
+    background-size: 100% 100%;
+}
+
+.titulosGra {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+	color: #00a3e3;
+}
