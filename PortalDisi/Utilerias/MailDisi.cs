@@ -12,17 +12,13 @@ namespace PortalDisi.Utilerias
     {
         public void send(Formulario form)
         {
-            var mail = new MailMessage();
 
-            //mail.From = new MailAddress("nelly.juarez@disioperaciones.com");
-            mail.From = new MailAddress("luis.gc06@gmail.com");
-            
-            mail.To.Add("luis.gonzalez@arkingsoft.com");//Fijo DISI
-            //mail.To.Add("disi@disioperaciones.com");//Fijo DISI
-            mail.To.Add(form.correo);
-
-            mail.Subject = "Información de Factoraje DiSí " + form.nombre;
-            mail.IsBodyHtml = true;
+            MailMessage mmsg = new MailMessage();
+            mmsg.To.Add("disi@disioperaciones.com");//Fijo DISI
+            mmsg.To.Add(form.correo);
+            //Asunto
+            mmsg.Subject = "Información de Factoraje DiSí ";
+            mmsg.IsBodyHtml = true;
             string htmlBody;
             htmlBody = "\n EMPRESA:" + form.empresa;
             htmlBody += "\n OCUPACION:" + form.ocupacion;
@@ -30,20 +26,23 @@ namespace PortalDisi.Utilerias
             htmlBody += "\n TELEFONO FIJO:" + form.tel;
             htmlBody += "\n TELEFONO CELULAR:" + form.celular;
             htmlBody += "\n \n" + form.comentarios;
-            mail.Body = htmlBody;
+            mmsg.Body = htmlBody;
 
-
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-            SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("luis.gc06@gmail.com", "gonzalez7U");
-
-            //SmtpClient SmtpServer = new SmtpClient("mail.disioperaciones.com");
-            //SmtpServer.Port = 26;
-            //SmtpServer.Credentials = new System.Net.NetworkCredential("nelly.juarez@disioperaciones.com", "3219386straw");
-
-            SmtpServer.UseDefaultCredentials = false;
-            SmtpServer.EnableSsl = true;
-            SmtpServer.Send(mail);
+            mmsg.IsBodyHtml = false;
+            //mmsg.From = new MailAddress("disi@disioperaciones.com");
+            mmsg.From = new MailAddress("luis.gc06@gmail.com");
+            SmtpClient cliente = new SmtpClient
+            {
+                //Credentials = new NetworkCredential("disi@disioperaciones.com", "oVc&a630"),
+                //Port = 26,
+                //EnableSsl = true,
+                //Host = "mail.disioperaciones.com"
+                Credentials = new NetworkCredential("luis.gc06@gmail.com", "gonzalez7U"),
+                Port = 25,
+                EnableSsl = true,
+                Host = "smtp.gmail.com"
+            };
+            cliente.Send(mmsg);
             Console.WriteLine("Envio mail.");
         }
     }

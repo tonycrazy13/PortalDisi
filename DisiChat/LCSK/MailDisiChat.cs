@@ -11,30 +11,25 @@ namespace DisiChat.LCSK
     {
         public void send(string fromMail, string mensaje)
         {
-            var mail = new MailMessage();
 
-            //mail.From = new MailAddress("nelly.juarez@disioperaciones.com");
-            mail.From = new MailAddress("luis.gc06@gmail.com");
-            
-            mail.To.Add("luis.gonzalez@arkingsoft.com");//Fijo DISI
-            //mail.To.Add("disi@disioperaciones.com");//Fijo DISI
-            mail.To.Add(fromMail);
+            MailMessage mmsg = new MailMessage();
+            mmsg.To.Add("disi@disioperaciones.com");//Fijo DISI
+            mmsg.To.Add(fromMail);
+            //Asunto
+            mmsg.Subject = "DiSí Chat - Contacto Desconectado";
+            mmsg.IsBodyHtml = true;
+            mmsg.Body = "Recibió un contacto sin conexión desde el chat DiSí.\r\n\r\n" + mensaje;
 
-            mail.Subject = "DiSí Chat - Contacto Desconectado";
-            mail.IsBodyHtml = true;
-            mail.Body = "Recibió un contacto sin conexión desde el chat DiSí.\r\n\r\n" + mensaje;
-
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-            SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("luis.gc06@gmail.com", "gonzalez7U");
-
-            //SmtpClient SmtpServer = new SmtpClient("mail.disioperaciones.com");
-            //SmtpServer.Port = 26;
-            //SmtpServer.Credentials = new System.Net.NetworkCredential("nelly.juarez@disioperaciones.com", "3219386straw");
-
-            SmtpServer.UseDefaultCredentials = false;
-            SmtpServer.EnableSsl = true;
-            SmtpServer.Send(mail);
+            mmsg.IsBodyHtml = false;
+            mmsg.From = new MailAddress("disi@disioperaciones.com");
+            SmtpClient cliente = new SmtpClient
+            {
+                Credentials = new NetworkCredential("disi@disioperaciones.com", "oVc&a630"),
+                Port = 26,
+                EnableSsl = true,
+                Host = "mail.disioperaciones.com"
+            };
+            cliente.Send(mmsg);
             Console.WriteLine("Envio mail.");
         }
     }

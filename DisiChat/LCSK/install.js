@@ -23,7 +23,7 @@
         if (adminPass == '') {
             $('#save-alerts').html('<div class="alert alert-warning">' +
                 '<button type="button" class="close" data-dismiss="alert">×</button>' +
-                '<strong>Oops!</strong> You have to specify an admin password.</div>');
+                '<strong>Error!</strong> Usted tiene que especificar la contraseña de Admin.</div>');
 
             return;
         }
@@ -31,7 +31,7 @@
         if (agentPass == '') {
             $('#save-alerts').html('<div class="alert alert-warning">' +
                 '<button type="button" class="close" data-dismiss="alert">×</button>' +
-                '<strong>Oops!</strong> You have to specify an agent password.</div>');
+                '<strong>Error!</strong> Usted tiene que especificar la contraseña del agente.</div>');
 
             return;
         }
@@ -39,7 +39,7 @@
         if (email == '') {
             $('#save-alerts').html('<div class="alert alert-warning">' +
                 '<button type="button" class="close" data-dismiss="alert">×</button>' +
-                '<strong>Oops!</strong> You have to specify an email.</div>');
+                '<strong>Error!</strong> Usted tiene que especificar el Email.</div>');
 
             return;
         }
@@ -66,13 +66,13 @@
         } else {
             $('#login-alerts').html('<div class="alert alert-error">' +
                 '<button type="button" class="close" data-dismiss="alert">×</button>' +
-                '<strong>Oops!</strong> This is not the right password. If you do not remember your admin password, simply remove the LCSK.dat file on your App_Data folder.</div>');
+                '<strong>Error!</strong> Indique el password correcto.</div>');
         }
     };
 
     myHub.client.setConfigResult = function (state, msg) {
         var boxType = state ? 'alert-success' : 'alert-error';
-        var boxPrompt = state ? 'Save successful' : 'Save failed';
+        var boxPrompt = state ? 'Guardado Exitoso' : 'Error al Guardar';
 
         $('#save-alerts').html('<div class="alert ' + boxType + '">' +
                 '<button type="button" class="close" data-dismiss="alert">×</button>' +

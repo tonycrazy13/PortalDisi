@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Configurar Chat Disi</title>
+    <title>Configure your LCSK installation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dominic St-Pierre">
 
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="navbar-brand" href="/LCSK/agent.html">Chat Disi-Agente</a>
+                <a class="navbar-brand" href="/LCSK/agent.html">LiveChat Starter Kit</a>
                 <div class="nav-collapse collapse">
                     <ul class="navbar-nav"></ul>
                 </div>
@@ -44,51 +44,52 @@
                 <div class="col-md-12">
                     <div id="config">
                         <div class="jumbotron">
-                            <h2>Configurando su instalación</h2>
+                            <h2>Configuring your installation</h2>
+                            <p>
+                                You can configure some basics information here. After the first install you will be prompt to
+                                login to modify config values on this page. If you forget your admin password, simply remove the config file
+                                on your App_Data folder.
+                            </p>
                         </div>
 
                         <div id="save-alerts"></div>
 
                         <h3>How agents can connect <small>this is the simplest way we could find</small></h3>
                         <p>
-                            Las contraseñas se guardan de forma encriptada en el archivo de configuración en ~ / App_Data/lcsk.dat.
-                            Los Administradores o Agentes pueden utilizar cualquier nombre que deseen, el Chat identificara q nivel tiene con la contraseña ingresada....
+                            You have two main passwords that are saved in an encrypted way on the LCSK's configuration file found on ~/App_Data/lcsk.dat.
+                            Admins or agents can use any name they like and you give them there respective password based on what level you
+                            want them to be.
                         </p>
 
                         <fieldset>
-                            <legend>Indique las contraseñas</legend>
+                            <legend>Set your passwords</legend>
                             <p>
-                                <label>Contraseña de Admin</label>
+                                <label>Admin password</label>
                                 <input type="password" id="main-pass" class="form-control" />
-                                <span class="help-block">Esto es para acceso ADMINISTRATIVO, administradores todos comparte la misma contraseña.</span>
+                                <span class="help-block">This is for administrative access, all admins shares the same password.</span>
                             </p>
                             <p>
                                 <label>Agent password</label>
                                 <input type="password" id="agent-pass" class="form-control" />
-                                <span class="help-block">Esto es para sus AGENTES. Todos los agentes que comparte la misma contraseña.</span>
-                            </p>
-                            <p>
-                                <label>Correo electrónico cuando no hay agentes en línea</label>
-                                <input type="email" id="email" class="form-control" placeholder="Email for offline contact" />
-                                <span class="help-block">Cuando un visitante en contacto con usted cuando todos los agentes están fuera de línea.</span>
+                                <span class="help-block">This is for your agents. All agents shares the same password.</span>
                             </p>
                         </fieldset>
 
                         <hr />
 
-                        <a href="#" id="save-button" class="btn btn-primary btn-large">Guardar Cambios</a>
+                        <a href="#" id="save-button" class="btn btn-primary btn-large">Save Changes</a>
                     </div>
 
                     <div id="login">
-                        <h2>Log In para Configurar su Instalación</h2>
+                        <h2>Log In to configure your installation</h2>
                         <div id="login-alerts"></div>
                         <fieldset>
-                            <legend>Indique la Contraseña a configurar</legend>
+                            <legend>Enter the admin password</legend>
                             <p>
-                                <label>Contraseña:</label>
+                                <label>Admin Password</label>
                                 <input id="login-pass" type="password" class="form-control" />
                             </p>
-                            <button id="login-btn" type="submit" class="btn btn-primary btn-medium">Guardar</button>
+                            <button id="login-btn" type="submit" class="btn btn-primary btn-medium">Login</button>
                         </fieldset>
                     </div>
                 </div>
@@ -98,6 +99,10 @@
             <hr>
 
         </div>
+
+        <footer>
+            <p>LiveChat Starter Kit by <a href="http://www.dominicstpierre.com">Dominic St-Pierre</a> - free open source live chat / live support app available here <a href="https://github.com/dstpierre/lcsk">https://github.com/dstpierre/lcsk</a></p>
+        </footer>
         <!--/.fluid-container-->
     </div>
 

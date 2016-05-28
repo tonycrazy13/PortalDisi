@@ -16,8 +16,7 @@ namespace PortalDisi.Models
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            //modelBuilder.HasDefaultSchema("SYSTEM");
-            modelBuilder.HasDefaultSchema("DISIOPERACIONES");
+            modelBuilder.HasDefaultSchema("SYSTEM");
             modelBuilder.Entity<Formulario>().Property(t => t.id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
             modelBuilder.Entity<Campania>().Property(c => c.id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
         }
