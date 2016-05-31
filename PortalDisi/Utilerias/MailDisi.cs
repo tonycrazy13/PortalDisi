@@ -14,7 +14,7 @@ namespace PortalDisi.Utilerias
         {
 
             MailMessage mmsg = new MailMessage();
-            mmsg.To.Add("disi@disioperaciones.com");//Fijo DISI
+            mmsg.To.Add(Constantes.MAIL_FIJO);//Fijo DISI
             mmsg.To.Add(form.correo);
             //Asunto
             mmsg.Subject = "Información de Factoraje DiSí ";
@@ -30,17 +30,17 @@ namespace PortalDisi.Utilerias
 
             mmsg.IsBodyHtml = false;
             //mmsg.From = new MailAddress("disi@disioperaciones.com");
-            mmsg.From = new MailAddress("luis.gc06@gmail.com");
+            mmsg.From = new MailAddress(Constantes.USER_SMTP);
             SmtpClient cliente = new SmtpClient
             {
                 //Credentials = new NetworkCredential("disi@disioperaciones.com", "oVc&a630"),
                 //Port = 26,
                 //EnableSsl = true,
                 //Host = "mail.disioperaciones.com"
-                Credentials = new NetworkCredential("luis.gc06@gmail.com", "gonzalez7U"),
-                Port = 25,
+                Credentials = new NetworkCredential(Constantes.USER_SMTP, Constantes.PASSWORD_SMTP),
+                Port = Constantes.PORT_SMTP,
                 EnableSsl = true,
-                Host = "smtp.gmail.com"
+                Host = Constantes.SERVER_SMTP
             };
             cliente.Send(mmsg);
             Console.WriteLine("Envio mail.");

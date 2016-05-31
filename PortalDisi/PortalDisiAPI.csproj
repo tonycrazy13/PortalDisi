@@ -246,6 +246,7 @@
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utilerias\MailDisi.cs" />
+    <Compile Include="Utilerias\Constantes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -410,8 +411,8 @@
     <Content Include="Global.asax" />
     <Content Include="DisiStyle\index2.html" />
     <Content Include="index.html" />
+    <Content Include="pages\campanias_det.html" />
     <Content Include="pages\preguntas.html" />
-    <Content Include="pages\detallePopup.html" />
     <Content Include="pages\formularioPopup.html" />
     <Content Include="Scripts\appAngularDisi.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -513,6 +514,7 @@
     <Content Include="Contenido\less\grayscale.less" />
     <Content Include="Contenido\less\mixins.less" />
     <Content Include="Contenido\less\variables.less" />
+    <Content Include="Contenido\pdf\jsf.pdf" />
     <None Include="Properties\PublishProfiles\xxxxx.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\carousel2.js" />

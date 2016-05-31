@@ -61,6 +61,7 @@
 					<li><a class="page-scroll" href="#nosotros">Nosotros</a></li>
                     <li><a class="page-scroll" onclick="window.open('pages/preguntas.html')">Faq</a></li>
 					<li><a class="page-scroll" href="#aqui">Aqui esta la solución</a></li>
+                    <li><a class="page-scroll glyphicon glyphicon glyphicon-cog" href="#herramientas"></a></li>
 					<li><a class="page-scroll glyphicon glyphicon-user" href="#page-top"></a></li> 
                 </ul>
             </div>
@@ -89,7 +90,7 @@
 
 
     <section id="brindamos">
-            <div class="fondoPages text-center">
+            <div class="fondoPages">
                 <div class="row">
                   <div class="col-md-6">
                       <div>
@@ -110,8 +111,8 @@
                                 </h4>
                             </div>
                         </div>
-                        <div class="row text-center">
-                            <a href="#herramientas" class="page-scroll">
+                        <div class="row">
+                            <a class="text-center" href="#herramientas">
                                     <div class="herramientas">
                                     <br /><br /> <br /> <br />
                                 </div>
@@ -120,7 +121,7 @@
                   </div>
                 <div class="row">
                   <div class="col-md-12">
-                      <div class="text-center">
+                      <div>
                             <a>
                                 <img class="img-responsive animated" alt="Personas" src="Contenido/img/personas.jpg" />
                             </a>
@@ -240,7 +241,6 @@
             </div>
         </div>
     </section>
-
     <br />
 
   <section class="fondoPages" id="herramientas">
@@ -257,7 +257,7 @@
                     </div>
                 </div>
  
-                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px;overflow: hidden;">
+                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 550px;overflow: hidden;">
                     <div><img u="image" src="Contenido/img/carrusel/img_cotizacion.jpg" alt="Cotización" /></div>
                     <div><img u="image" src="Contenido/img/carrusel/img_creditoSimple.jpg" alt="Credito Simple" /></div>
                     <div><img u="image" src="Contenido/img/carrusel/img_estadoCuenta.jpg" alt="Estado de Cuenta" /></div>
@@ -268,30 +268,25 @@
                     @foreach (var item in Model)
                     {
                         <div> 
-                            <div u="image" class="fillImage" style="background-image: url('Contenido/img/carrusel/campanias/@Url.Content(item.imagen)');">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <br />
-                                            <p class="allimages  campaniasStyle titulosGraBold">@(item.titulo)</p>
-                                            <br />
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <br />
-                                            <p class="campaniasStyle titulosGra 6u">@(item.titulo)</p>
-                                            <br />
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="left" class="campaniasStyle">
+                            <div u="image" style="background-image: url(@Url.Content("Contenido/img/carrusel/campanias/" + item.imagen + "")); background-size: 100% 100%; height: 550px;" class="offer slideanim">
+                                <div class="row">
+                                    <div class="offer-grid">
+                                        <section class="col-md-6 col-sm-6 offer1 slideanim">
+                                            <br /><br />
+                                            <header class="offer-info">
+                                                <p class="campaniasStyle titulosGraBold">@(item.titulo)</p>
+                                            </header>
+                                            <footer>
+                                                <p class="campaniasStyle titulosGra col-md-8 col-xs-offset-2">@(item.mensaje)</p>
+                                            </footer>
                                             <br /><br /><br />
                                             <button class="btn btn-danger" ng-click="formularioDetalle(@Newtonsoft.Json.JsonConvert.SerializeObject(item));">MAS INFORMACION</button>
-                                        </td>
-                                    </tr>
-                                </table>
+                                        </section>
+                                        <div class="col-md-6 col-sm-6 offer1 slideanim">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                          </div>
                     }
@@ -305,12 +300,11 @@
         </div>
     </section>
 
-
     <!--FOOTER-->
      <div class="fondoFooter">
         <div class="row">
             <section id="features" class="container">
-                <div class="col-md-3" data-ng-repeat="sucu in sucursales">
+                <div class="col-md-4" data-ng-repeat="sucu in sucursales">
                     <article>
                         <header>
                             <h3>{{sucu.titulo}}</h3>
@@ -347,18 +341,19 @@
          <hr />
         <div class="container text-center">
                 <div class="menu">
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">UNE</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CONDUSEF</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CNBV</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">SHCP</a>
+                    <a class="titulosBlanco15" href="Contenido/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a> - 
+                    <a class="titulosBlanco15" href="Contenido/pdf/jsf.pdf" target="_blank">UNE</a> - 
+                    <a class="titulosBlanco15" href="Contenido/pdf/jsf.pdf" target="_blank">CONDUSEF</a> - 
+                    <a class="titulosBlanco15" href="Contenido/pdf/jsf.pdf" target="_blank">CNBV</a> - 
+                    <a class="titulosBlanco15" href="Contenido/pdf/jsf.pdf" target="_blank">SHCP</a>
                 </div>
                 <br />
                 <div class="menu">
-                    <a class="row titulosBlancoBold">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada en la CONDUSEF Y CNBV</a>
+                    <p class="row titulosBlancoBold">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada en la CONDUSEF Y CNBV</p>
                 </div>
          </div>
     </div>
+
 
     <!-- jQuery -->
     <script src="Contenido/js/jquery.js"></script>
