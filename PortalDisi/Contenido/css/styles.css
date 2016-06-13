@@ -65,25 +65,23 @@ input[type="button"],input[type="submit"] {
 }
 
 .fondoProblema {
-    position: relative;
     display: table;
     width: 100%;
     height: inherit;
-    padding: 100px 0;
+    padding: 150px 0;
     text-align: center;
     color: #fff;
     background: url("../img/canales/fondo_problema.jpg") no-repeat bottom center scroll;
     background-color: #000;
     background-attachment: fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 90%;
+    -moz-background-size: 100% 90%;
+    background-size: 100% 90%;
+    -o-background-size: 100% 90%;
     opacity: 0.9;
 }
 
 .fondoSolucion {
-    position: relative;
     display: table;
     width: 100%;
     height: inherit;
@@ -93,15 +91,14 @@ input[type="button"],input[type="submit"] {
     background: url("../img/canales/fondo_solucion.jpg") no-repeat bottom center scroll;
     background-color: #000;
     background-attachment: fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 90%;
+    -moz-background-size: 100% 90%;
+    background-size: 100% 90%;
+    -o-background-size: 100% 90%;
     opacity: 0.9;
 }
 
 .fondoProductosFinan {
-    position: relative;
     display: table;
     width: 100%;
     height: inherit;
@@ -111,15 +108,14 @@ input[type="button"],input[type="submit"] {
     background: url("../img/canales/fondo_pf.jpg") no-repeat bottom center scroll;
     background-color: #000;
     background-attachment: fixed;
-    -webkit-background-size: 100% 50%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 90%;
+    -moz-background-size: 100% 90%;
+    background-size: 100% 90%;
+    -o-background-size: 100% 90%;
     opacity: 0.9;
 }
 
 .fondoProductosFinan2 {
-    position: relative;
     display: table;
     width: 100%;
     height: inherit;
@@ -129,15 +125,14 @@ input[type="button"],input[type="submit"] {
     background: url("../img/canales/fondo_pf2.jpg") no-repeat bottom center scroll;
     background-color: #000;
     background-attachment: fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 90%;
+    -moz-background-size: 100% 90%;
+    background-size: 100% 90%;
+    -o-background-size: 100% 90%;
     opacity: 0.9;
 }
 
 .fondoNosotros {
-    position: relative;
     display: table;
     width: 100%;
     height: inherit;
@@ -147,15 +142,14 @@ input[type="button"],input[type="submit"] {
     background: url("../img/canales/fondo_nosotros.jpg") no-repeat bottom center scroll;
     background-color: #000;
     background-attachment: fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 90%;
+    -moz-background-size: 100% 90%;
+    background-size: 100% 90%;
+    -o-background-size: 100% 90%;
     opacity: 0.9;
 }
 
 .fondoPreguntas {
-    position: relative;
     display: table;
     width: 100%;
     height: inherit;
@@ -165,15 +159,14 @@ input[type="button"],input[type="submit"] {
     background: url("../img/canales/fondo_preguntas.jpg") no-repeat bottom center scroll;
     background-color: #000;
     background-attachment: fixed;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 90%;
+    -moz-background-size: 100% 90%;
+    background-size: 100% 90%;
+    -o-background-size: 100% 90%;
     opacity: 0.9;
 }
 
 .fondoFooter {
-    position: relative;
 	overflow: hidden;
 	padding: 2em 0 2em 0;
 	background-image: url("../img/fondo_contacto.jpg");
@@ -181,7 +174,6 @@ input[type="button"],input[type="submit"] {
 }
 
 .fondoFooter {
-    position: relative;
 	overflow: hidden;
 	padding: 2em 0 2em 0;
 	background-image: url("../img/fondo_contacto.jpg");
@@ -189,7 +181,6 @@ input[type="button"],input[type="submit"] {
 }
 
 .fondoPagesNegro {
-	position: relative;
 	background-image: url("Contenido/img/fondo.jpg");
     background-repeat: no-repeat;
 	background-size: 100% 100%;

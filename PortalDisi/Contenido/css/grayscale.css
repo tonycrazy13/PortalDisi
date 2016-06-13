@@ -148,10 +148,10 @@ a:focus {
     color: #fff;
     background: url(../img/logos/Home_PuntoBlanco.jpg) no-repeat bottom center scroll;
     background-color: #000;
-    -webkit-background-size: 100% 110%;
-    -moz-background-size: 100% 110%;
-    background-size: 100% 110%;
-    -o-background-size: 100% 110%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
 }
 
 .intro .intro-body {
@@ -166,6 +166,82 @@ a:focus {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+
+.introProblem {
+    display: table;
+    width: 100%;
+    height: inherit;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("../img/canales/fondo_problema.jpg") no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: 100% 95%;
+    -moz-background-size: 100% 95%;
+    background-size: 100% 95%;
+    -o-background-size: 100% 95%
+}
+
+.introSolucion {
+    display: table;
+    width: 100%;
+    height: inherit;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("../img/canales/fondo_solucion.jpg") no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: 100% 95%;
+    -moz-background-size: 100% 95%;
+    background-size: 100% 95%;
+    -o-background-size: 100% 95%;
+}
+
+.introProductosFinan {
+    display: table;
+    width: 100%;
+    height: inherit;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("../img/canales/fondo_pf.jpg") no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: 100% 95%;
+    -moz-background-size: 100% 95%;
+    background-size: 100% 95%;
+    -o-background-size: 100% 95%;
+}
+
+.introProductosFinan2 {
+    display: table;
+    width: 100%;
+    height: inherit;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("../img/canales/fondo_pf2.jpg") no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: 100% 95%;
+    -moz-background-size: 100% 95%;
+    background-size: 100% 95%;
+    -o-background-size: 100% 95%;
+}
+
+.introNosotros {
+    display: table;
+    width: 100%;
+    height: inherit;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url("../img/canales/fondo_nosotros.jpg") no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: 100% 95%;
+    -moz-background-size: 100% 95%;
+    background-size: 100% 95%;
+    -o-background-size: 100% 95%;
+}
+
 
 @media(min-width:768px) {
     .intro {
