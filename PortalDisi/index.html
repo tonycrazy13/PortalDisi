@@ -10,347 +10,326 @@
 
     <title>DiSi Operaciones</title>
 
+    <!-- Custom CSS -->
+    <link href="ContenidoNew/cssForm/bootstrap.min.css" rel="stylesheet"/>
     <!-- Bootstrap Core CSS -->
-    <link href="Contenido/css/bootstrap.css" rel="stylesheet">
+    <link href="ContenidoNew/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="Contenido/css/grayscale.css" rel="stylesheet">
+    <link href="ContenidoNew/css/grayscaleNew.css" rel="stylesheet">
 
     <!-- DISI CSS -->
-    <link href="Contenido/css/styles.css" rel="stylesheet">
+    <link href="ContenidoNew/css/styles.css" rel="stylesheet">
 
     <!-- JSSOR -->
-    <link href="Contenido/css/carousel.css" rel="stylesheet">
+    <link href="ContenidoNew/css/carousel.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="Contenido/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="ContenidoNew/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom Fonts 
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
+	-->
+	
     <!--UiDialog Popups-->
     <link href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.5.9/css/ngDialog.css" rel="stylesheet" type="text/css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.5.9/css/ngDialog-theme-default.min.css" rel="stylesheet" type="text/css">
-
+    <script> 
+function ventanaForm() { 
+open('form.html','','top=auto,left=300,width=500,height=650px') ; 
+} 
+</script>
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-ng-app="myApp" ng-controller="ctrlGeneric">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-ng-app="myApp" ng-controller="ctrlGeneric" >
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	 <nav class="navbar-fixed-top">
         <div class="container">
+            <a class="navbar-brand page-scroll"  href="#page-top"
+				style="padding-top: 7px;"><img class="navbar-brand" src="ContenidoNew/img/logos/logodisi_negro.png" style="padding-top: 0; margin-top: 0;">
+			</a>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll"  href="#page-top"
-					style="padding-top: 7px;"><img class="navbar-brand" src="Contenido/img/logos/LOGO_DISI2.png" style="padding-top: 0; margin-top: 0;">
-				</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#problema">Problema</a></li>
-					<li><a class="page-scroll" href="#solucion">Solución</a></li>
-					<li><a class="page-scroll" href="#productos">Productos de Financiamiento </a></li>
-					<li><a class="page-scroll" href="#nosotros">Nosotros</a></li>
-                    <li><a class="page-scroll" onclick="window.open('pages/preguntas.html')">Faq</a></li>
-					<li><a class="page-scroll" href="#aqui">Aqui esta la solución</a></li>
-					<li><a class="page-scroll glyphicon glyphicon-user" href="#page-top"></a></li> 
-                </ul>
+				 <button style="padding-top: 5px; margin-top: 5px;" class="btn btn-primary" href="">Acceso a Clientes</button>	 
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
+	<div class="img-responsive">
+	<img style="position: absolute; top: 0px; left: 550px; width: 150px; height: 130px;" src="ContenidoNew/img/logos/logodisi_negro.png" />
+	</div>
+    
+    <nav class="navbar navbar-custom navbar-fixed-bottom" role="navigation">
+    <div class="container">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+			<i class="fa fa-bars"></i>
+		</button>
+		</div>
+		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				<ul class="nav navbar-nav">
+					<li class="hidden"><a href="#page-top"></a></li>
+					<li><a class="page-scroll" href="#problema"><strong>Problema</strong></a></li>
+					<li><a class="page-scroll" href="#solucion"><strong>Solución</strong></a></li>
+					<li><a class="page-scroll" href="#productos"><strong>Productos de Financiamiento</strong> </a></li>
+					<li><a class="page-scroll" href="#nosotros"><strong>Nosotros</strong></a></li>
+					<li><a class="page-scroll" onclick="window.open('pages/preguntas.html')"><strong>Faq</strong></a></li>
+					<li><a class="page-scroll" href="#encuesta"><strong>Cuestionario</strong></a></li> 
+				</ul>
+					<a class="navbar-brand page-scroll"  href="#page-top"
+					style="padding-top: 7px;"><img class="navbar-brand" src="ContenidoNew/img/c-finger-pointing.png" style="padding-top: 0; margin-top: 0;">
+				</a>
+			</div>
+        </div>
+    </nav>
+<br/>
+    <!-- Intro Header -->				
+<header class="intro">
         <div class="intro-body">
             <div class="container">
-                <div class="row">
-                    <br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
-                    <div class="col-xs-20 col-xs-offset-7">
-                        <a href="#brindamos" class="page-scroll">
-                            <div class="inicio img-responsive">
-                                <br /> <br /> <br /> <br />
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-    <section id="brindamos">
-            <div class="fondoPages text-center">
-                <div class="row">
-                  <div class="col-md-6">
-                      <div>
-                            <img src="Contenido/img/logos/logodisi_negro.png" width="50%" height="50%">
-                        </div>
-                  </div>
-                  <div class="col-md-6">
-                        <div class="slideanim titulosNegro">
-                            <br />
-                            <p>RECIBE EL DINERO DE TUS VENTAS A CRÉDITO</p>
-                            <p>HOY MISMO.</p>
-                        </div>
-                        <br />
-                        <div class="row slideanim text-center">
-                            <div class="offer-info">
-                                <h4>
-                                    <a class="titulos" ng-click="formulario();">Aplica hoy mismo y empieza a invertir en las cosas que más importan..</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <a href="#herramientas" class="page-scroll">
-                                    <div class="herramientas">
-                                    <br /><br /> <br /> <br />
-                                </div>
-                            </a>
-                        </div>
-                  </div>
-                <div class="row">
-                  <div class="col-md-12">
-                      <div class="text-center">
-                            <a>
-                                <img class="img-responsive animated" alt="Personas" src="Contenido/img/personas.jpg" />
-                            </a>
-                        </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <section id="problema">
-            <div class=" fondoProblema">
-                <div class="row">
-                  <div class="col-md-10 col-xs-offset-4">
-                    <div>
-                        <img class="img-responsive animated" src="Contenido/img/canales/texto_problema.png" />
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xs-offset-4">
-                       <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Contenido/img/canales/btn_problema.png" /></a>
-                     <br /> 
-                  </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="solucion">
-            <div class=" fondoSolucion text-center">
-                <div class="row">
-                  <div class="col-md-10 col-xs-offset-4">
-                    <div>
-                        <img class="img-responsive animated" src="Contenido/img/canales/texto_solucion.png" />
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xs-offset-4">
-                       <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Contenido/img/canales/btn_solucion.png" /></a>
-                     <br /> 
-                  </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="fondoProductosFinan" id="productos">
-            <div class="row">
-                <div class="col-xs-14 col-xs-offset-4">
-                    <div>
-                        <img class="img-responsive animated" src="Contenido/img/canales/texto_pf.png" />
-                    </div>
-                    <br />
-                </div>
-                <div class="col-md-6 col-xs-offset-4">
-                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Contenido/img/canales/btn_problema.png" /></a>
-                    <br />
-                </div>
-            </div>
-        </div>
-        <div class="fondoProductosFinan2" id="productos2">
-            <div class="row">
-                <div class="col-xs-14 col-xs-offset-4">
-                    <div>
-                        <img class="img-responsive animated" src="Contenido/img/canales/texto_pf2.png" />
-                    </div>
-                    <br />
-                </div>
-                <div class="col-md-6 col-xs-offset-4">
-                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Contenido/img/canales/btn_solucion.png" /></a>
-                    <br />
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="nosotros">
-            <div class=" fondoNosotros text-center">
-                <div class="row">
-                  <div class="col-md-10 col-xs-offset-4">
-                    <div>
-                        <img class="img-responsive animated" src="Contenido/img/canales/texto_nosotros.png" />
-                    </div>
-                  </div>
-                <div class="col-md-6 col-xs-offset-4">
-                       <a onclick="window.open('pages/preguntas.html')"><img style="cursor:pointer"class="img-responsive" src="Contenido/img/canales/preguntas_icono.png" /></a>
-                         <br />
-                  </div>
-                <div class="row col-md-6 col-xs-offset-4">
-                    <a ng-click="formulario();"><img style="cursor:pointer" class="img-responsive" src="Contenido/img/canales/btn_problema.png" /></a>
-                    <br />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="aqui">
-        <div class="offer slideanim">
-            <div class="fondoPages row">
-                <div class="offer-grid">
-                    <section class="col-md-6 col-sm-6 offer1 slideanim">
-                        <br /><br />
-                        <header class="offer-info">
-                            <h2 class="titulosGraBold">Aquí está la solución.</h2>
-                        </header>
-                        <footer>
-                            <p class="titulosNegro">Queremos conocerte y entender las necesidades de tu negocio.</p><br />
-                            <p class="titulosNegro">Por favor llena el formulario y envíanos tus datos<a ng-click="formulario();" class="titulos">(aquí)</a></p><br />
-                            <p class="titulosNegro">También escríbenos a<a ng-click="formulario();" class="titulos">(aquí)</a><a href="mailto:disi@disioperaciones.com" id="mail" class="titulosNegro">disi@disioperaciones.com</a></p><br />
-                            <p class="titulosNegro">Uno de nuestros ejecutivos se pondrá en contacto contigo.</p><br />
-                        </footer>
-                    </section>
-                    <div class="col-md-6 col-sm-6 offer1 slideanim">
-                        <div class="offer-icon">
-                            <img class="img-responsive" src="Contenido/img/aqui.png" alt="Aquí">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <br />
-
-    <!--CAROUSEL-->
-
-    <section id="herramientas" class="fondoPages" ng-controller="ctrlCarusel">
-
-
-        <div id="jssor_1" style="position: relative; background-attachment:fixed;  margin: 0 auto; top: 0px; left: 0px; width: 900px; height: 800px; overflow: hidden; visibility: hidden;">
+                <div class="row">			
+ <div id="jssor_1"  style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block; no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-        <!--EMPIEZAN LAS IMAGENES-->
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 900px; height: 800px; overflow: hidden;">
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Contenido/img/casousel/img_contactar.jpg" />
-                <!--<div data-u="caption" data-t="0" style="position: absolute; top: 320px; left: 30px; width: 350px; height: 30px; background-color: rgba(235,81,0,0.5); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">mobile ready, touch swipe</div>-->
+		<div style="position: absolute; top: 170px; left: 550px; width: 470px; height: 220px;">
+								<a ng-click="formulario();">
+									<img style="position: absolute; top: 0px; left: 0px; width: 100px; height: 100px;" src="ContenidoNew/img/botonDisi.png"/>
+								 </a> 
+                               <img style="position: absolute; top: 65px; left: 0px; width: 70px; height: 70px;" src="ContenidoNew/img/c-finger-pointing.png" />								 
+				</div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 430px; overflow: hidden;">
+           
+            <div data-p="225.00" style="display: none;">
+				<div style="text-align: justify; position: absolute; top: 300px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+								<label class="titulosNegro">Tu empresa vende a plazo o a credito a tus clientes y debes de esperar
+							  entre 30 y 120 días para que te den tu dinero.</label>
+				</div>	
+				<div style="text-align: justify; position: absolute; top: 100px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+                    <label class="titulosNegro" style="text-align: justify; color: red;">Pero si no doy plazo de pago no me compran <img style="width: 60px; height: 50px;" src="ContenidoNew/img/logos/caritaTriste.png"/></label>				
+                </div>
+			</div>
+			<div data-p="225.00" data-po="80% 55%" style="display:none">
+							<div style="text-align: justify; position: absolute; top: 300px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+							<label class="titulosNegro">Con el factoraje electronico de Disí, tu empresa recibe hoy el dinero de tus ventasa credito;
+						   siempre tendrás la seguridad de tener los recursos necesarios para hacer crecer tu negocio.</label>
+							</div>
+							<div style="text-align: justify; position: absolute; top: 100px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+							<label class="titulosNegro" style="text-align: justify; color: green;">Puedo vender a plazo y tener liquidez siempre para operar <img style="width: 60px; height: 50px;" src="ContenidoNew/img/logos/caritaFeliz.png"/></label>
+							</div>
+            </div>	
+            <div data-p="225.00" data-po="80% 55%" style="display: none;">             
+							<div style="text-align: justify; position: absolute; top: 100px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+							<label class="titulosNegro">En pagos de facturas lejanos, tu ejecutivo <img style="width: 80px; height: 60px;" src="ContenidoNew/img/logos/logodisi_negro.png"/> siempre te dará un trato muy cercano.</label>
+							</div>
+							<div style="text-align: justify; position: absolute; top: 300px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+							<label class="titulosNegro">Cuando no logras convencer a tu cliente de cambiar sus plazos de pago, recuerda...El 
+                             accesible es <img style="width: 80px; height: 60px;" src="ContenidoNew/img/logos/logodisi_negro.png"/></label>
+							</div>				
             </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Contenido/img/casousel/img_cotizacion.jpg" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Contenido/img/casousel/img_creditoSimple.jpg" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Contenido/img/casousel/img_estadoCuenta.jpg" />
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="Contenido/img/casousel/img_estadoCuenta.jpg" />
-            </div>
-            <div ng-repeat="campa in campanias" data-p="112.50" style="display: none;">
-                <img data-u="image" ng-src="{{campa.imagen}}" />
-            </div>
+			 <div data-p="225.00" data-po="80% 55%" style="display: none;">
+							 <div style="text-align: justify; position: absolute; top: 100px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+							<label class="titulosNegro">La distancia mas corta para tener efectivo de tus ventas a plazos
+							es el servicio de linea de <img style="width: 80px; height: 60px;" src="ContenidoNew/img/logos/logodisi_negro.png"/></label>
+							</div>
+							<div style="text-align: justify; position: absolute; top: 300px; left: 200px; width: 880px; height: 120px; font-size: 30px; color: #000; line-height: 38px;" >
+							<label class="titulosNegro">DiSí te da el poder de decir que SI. DiSí te da el poder de vender. 
+                             accesible es <img style="width: 80px; height: 60px;" src="ContenidoNew/img/logos/logodisi_negro.png"/></label>
+							</div>
+            </div>		
         </div>
         <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
-        <div data-u="prototype" style="width:12px;height:12px;"></div>
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
         </div>
         <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+       <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
     </div>
-        <!--
-        <div ng-repeat="campa in campanias">
-            <p class="titulos">{{campa.imagen}}</p>
-        </div>
-            -->
-    </section>
-
+					<!--<div >
+                        <a href="#brindamos" class="page-scroll">
+                            <div class="inicio img-responsive">
+							<br class="fondoPages"/><br class="fondoPages"/><br class="fondoPages"/><br class="fondoPages"/>
+                            </div>
+                        </a>
+                 </div> -->
+				<br/>
+				 <div style="text-align:center">
+				 <label class="titulosNegro">Cuando tus facturas son a plazo...Tu mejor recur$o es <img style="width: 80px; height: 70px;" src="ContenidoNew/img/logos/logodisi_negro.png"/></label>
+                 </div>			 
+ </div></div></div></header>              
+   <!-- <section id="brindamos">
+            <div class="text-center ">                                          
+                        <div class="row slideanim text-center">
+                            <div class="offer-info text-center">
+                                <label class="titulosNegro">Cuando tus factura$ son a plazo...</label><br class="fondoPages"/>
+								<label class="titulosNegro">Tu recurso e$ <img style="width: 80px; height: 70px;" src="ContenidoNew/img/logos/logodisi_negro.png"/></label>
+                            </div>
+						</div>
+						 <div class="slideanim titulosNegro text-center">
+                           <img class="img-responsive animated" style="position: left: 0px; width: 200px; height: 200px;" src="ContenidoNew/img/botones/btnFact.png" />
+                        </div>          
+            </div>
+    </section>-->
+	<section id="encuesta">
+	 
+ <br/>
+		   <div class="container">
+		    <div class="col-md-6">		
+	 <div style="background-color: #2D2B6B; text-align: center;  margin-right; 20px">
+	 <label style="color:#F8F8F8;font: menu;">Leer las siguientes lineas te puede beneficiar mucho y solo te llevará unos pocos
+	 segundos. Nos Gustaria que empezaras por contestarte a ti mismo las siguientes preguntas:<label>
+	 </div>
+	  <form>
+	  <div style="text-align:center;" class="row">
+                <div class="form-group row" >
+                        <label style="color:#2D2B6B;font: menu;"><strong>¿Tu negocio expide Facturas a plazo?</strong></label><br/>				
+						<label>
+						  <input type="radio" name="radio1" class="minimal" />
+						  <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;"/>
+						</label>
+				         <label style="color:#2D2B6B;font: menu;"><strong> ó </strong></label>
+						  <input type="radio" name="radio1" class="minimal"/>
+						  <label style="color:#2D2B6B;font: menu;"><strong>Dí no</strong></label>
+              </div>
+			   <div class="form-group">  
+                        <label style="color:#2D2B6B;font: menu;"><strong>¿Esos pagos a plazo hacen que necesitesun flujo de efectivo?</strong></label><br/>				   
+						<label>
+						  <input type="radio" name="radio2" class="minimal" />
+						  <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;"/>
+						</label>
+				         <label style="color:#2D2B6B;font: menu;"><strong> ó </strong></label>
+						  <input type="radio" name="radio2" class="minimal"/>
+						  <label style="color:#2D2B6B;font: menu;"><strong>Dí no</strong></label>
+              </div>
+			   <div class="form-group">  			
+			   <label style="color:#2D2B6B;font: menu;"><strong>¿Las opciones de prestamo son comunmente inaccesibles?</strong></label><br/>	
+						<label>
+						  <input type="radio" name="radio3" class="minimal" />
+						  <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;"/>
+						</label>
+				         <label style="color:#2D2B6B;font: menu;"><strong> ó </strong></label>
+						  <input type="radio" name="radio3" class="minimal"/>
+						  <label style="color:#2D2B6B;font: menu;"><strong>Dí no</strong></label>
+              </div>
+			   <div class="form-group">  
+                        <label style="color:#2D2B6B;font: menu;"><strong>¿Los tramites de banco para otorgarte credito son molestos?</strong></label><br/>				   
+						<label>
+						  <input type="radio" name="radio4" class="minimal" />
+						  <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;"/>
+						</label>
+				         <label style="color:#2D2B6B;font: menu;"><strong> ó </strong></label>
+						  <input type="radio" name="radio4" class="minimal"/ >
+						  <label style="color:#2D2B6B;font: menu;"><strong>Dí no</strong></label>
+              </div>
+			   <div class="form-group">  	
+                         <label style="color:#2D2B6B;font: menu;"><strong>¿Cuando mas los necesitas los ejecutivo brillan por su aunsencia?</strong></label><br/>				   
+						<label>
+						  <input type="radio" name="radio5" class="minimal" />
+						  <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;"/>
+						</label>
+				         <label style="color:#2D2B6B;font: menu;"><strong> ó </strong></label>
+						  <input type="radio" name="radio5" class="minimal"/ >
+						  <label style="color:#2D2B6B;font: menu;"><strong>Dí no</strong></label>
+              </div>
+			   <div class="form-group">  	
+                        <label style="color:#2D2B6B;font: menu;"><strong>¿Quisieras tener un servicio en linea para tener efectivo mientras te pagan tus facturas?</strong></label><br/>				   
+						<label>
+						  <input type="radio" name="radio67" />
+						  <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;"/>
+						</label>
+				         <label style="color:#2D2B6B;font: menu;"><strong> ó </strong></label>
+						  <input type="radio" name="radio6">
+						  <label style="color:#2D2B6B;font: menu;"><strong>Dí no</strong></label>
+              </div>
+			  </div>
+   </form>
+			   </div>
+			   <div class="col-md-6 bordeGris" style="background-color: rgba(113, 135, 122, 0.8); 
+color: rgba(113, 135, 122, 0.8);">
+					 <div style="text-align:center;" class="row">
+                      <label style="text-align: center;line-height:40px;color:#ECE9E9">Sección de noticias<br/>Crédito<br/>Pyme<br/>Financiamiento<br/>Liquidez<br/>Facturas<br/>Facturas Electronicas
+					  <br/>CFDI CFDIs<br/>Cuentas por cobrar<br/>Cuentas por pagar<br/>Factoraje<br/>Capital de Trabajo<br/>Crédito de proovedores</label>
+					  </div>
+			   </div>
+          </div>
+		  <div style="text-align: center;  margin-right; 20px">
+ <h1 style="color:#2D2B6B;font: menu;"><strong>Si dijiste 3 o mas preguntas a ti te conviene acercarte a </strong><img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 50px; height: 40px;"/><br/>
+ <strong>Llamanos estamos para servirte</strong><h1>
+ <!--<img src="ContenidoNew/img/formF.png" class="img-responsive-->
+ </div>
+		
+	</section>
     <!--FOOTER-->
-     <div class="fondoFooter">
+     <div >
         <div class="row">
+		<hr class="linea"/>	
             <section id="features" class="container">
                 <div class="col-md-3" data-ng-repeat="sucu in sucursales">
                     <article>
                         <header>
                             <h3>{{sucu.titulo}}</h3>
                         </header>
-                        <img src="Contenido/img/LineaH.png">
-                        <p class="titulosBlanco15">{{sucu.marcacion}}</p>
-                        <p class="titulosBlanco15">{{sucu.tel1}}</p>
-                        <p class="titulosBlanco15">{{sucu.tel2}}</p>
-                        <p class="titulosBlanco15">{{sucu.tel3}}</p>
+                        <p class="titulosNegro">{{sucu.marcacion}}</p>
+                        <p class="titulosNegro">{{sucu.tel1}}</p>
+                        <p class="titulosNegro">{{sucu.tel2}}</p>
+                        <p class="titulosNegro">{{sucu.tel3}}</p>
                     </article>
                 </div>
-                <div class="col-md-3">
+                <div class="text-center">
                     <article class="fondoContacto">
+				
                         <header>
                             <h3 class="titulosNegro">Contacto</h3>
                         </header>
                         <p>
-                            <a href="mailto:disi@disioperaciones.com" id="A2" class="icon titulosBlanco15">disi@disioperaciones.com</a>
+                            <a href="mailto:disi@disioperaciones.com" id="A2" class="icon titulosNegro">disi@disioperaciones.com</a>
                         </p>
                         <header>
-                            <h3 class="titulosNegro text-left">Encuéntranos</h3>
+                            <h3 class="titulosNegro text-center">Encuéntranos</h3>
                         </header>
+						<hr class="linea"/>	
                         <div>
-                            <a href="https://twitter.com/DisiCredito"><img src="Contenido/img/s_twiter.png" /></a>
-                            <a href="https://www.facebook.com/Disicredito"><img src="Contenido/img/s_face.png" /></a>
-                            <a><img src="Contenido/img/s_in.png" /></a>
-                            <a><img src="Contenido/img/s_insta.png" /></a>
+                            <a href="https://twitter.com/DisiCredito"><img src="ContenidoNew/img/s_twiter.png" /></a>
+                            <a href="https://www.facebook.com/Disicredito"><img src="ContenidoNew/img/s_face.png" /></a>
+                            <a><img src="ContenidoNew/img/s_in.png" /></a>
+                            <a><img src="ContenidoNew/img/s_insta.png" /></a>
                         </div>
+						<hr class="linea"/>	
                     </article>
                 </div>
             </section>  
         </div>
-         <hr />
-         <hr />
+         <br />
+         <br />
         <div class="container text-center">
                 <div class="menu">
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">UNE</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CONDUSEF</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CNBV</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">SHCP</a>
+                    <a class="titulosNegro" href="Content/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a> - 
+                    <a class="titulosNegro" href="Content/pdf/jsf.pdf" target="_blank">UNE</a> - 
+                    <a class="titulosNegro" href="Content/pdf/jsf.pdf" target="_blank">CONDUSEF</a> - 
+                    <a class="titulosNegro" href="Content/pdf/jsf.pdf" target="_blank">CNBV</a> - 
+                    <a class="titulosNegro" href="Content/pdf/jsf.pdf" target="_blank">SHCP</a>
                 </div>
                 <br />
                 <div class="menu">
-                    <a class="row titulosBlancoBold">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada en la CONDUSEF Y CNBV</a>
+                    <a class="row titulosNegro">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada en la CONDUSEF Y CNBV</a>
                 </div>
          </div>
     </div>
 
     <!-- jQuery -->
-    <script src="Contenido/js/jquery.js"></script>
+    <script src="ContenidoNew/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="Contenido/js/bootstrap.min.js"></script>
+    <script src="ContenidoNew/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="Contenido/js/jquery.easing.min.js"></script>
+    <script src="ContenidoNew/js/jquery.easing.min.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="Contenido/js/grayscale.js"></script>
+    <script src="ContenidoNew/js/grayscale.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>    
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -374,9 +353,8 @@
     <!--Angular Controller DISI-->
     <script src="Scripts/appAngularDisi.js"></script>
     <!--Carousel JSSOR-->
-    <script type="text/javascript" src="Contenido/js/jssor.slider.min.js"></script>
-    <script type="text/javascript" src="Contenido/js/carousel.js"></script>
-
+    <script type="text/javascript" src="ContenidoNew/js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="ContenidoNew/js/carousel.js"></script>
     <script>
         jssor_1_slider_init();
     </script>

@@ -16,6 +16,7 @@ namespace PortalDisi.Controllers
         public IEnumerable<Sucursal> Get()
         {
             return db.Sucursales.Where(s => s.activo == 1).ToList();
+            //return null;
         }
 
         // GET api/<controller>/5

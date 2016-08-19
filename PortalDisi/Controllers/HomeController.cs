@@ -13,7 +13,8 @@ namespace PortalDisi.Controllers
 
         public ActionResult Index()
         {
-            var list = db.Campanias.Where(c => c.activo == 1).ToList();
+            //var list = db.Campanias.Where(c => c.activo == 1).ToList();
+            var list = new List<Campania>();
             return View(list);
         }
     }
