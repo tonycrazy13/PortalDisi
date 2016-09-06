@@ -96,7 +96,7 @@ app.controller("ctrlGeneric", function ($scope, $http, ngDialog, Sucursales) {
 
            })
           .error(function (data) {
-              $scope.addError("Error al Enviar la Solicitud, intente mas tarde");
+              $scope.addError("Error al Enviar la Solicitud, intente más tarde");
           });
     }
 });

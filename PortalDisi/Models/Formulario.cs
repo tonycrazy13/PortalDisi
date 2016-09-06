@@ -26,7 +26,9 @@ namespace PortalDisi.Models
         public string celular { get; set; }
         [Column("ID_ESTADO_FORM")]
         public int idEstado { get; set; }
-        [NotMapped]
+        [Column("COMENTARIOS")]
         public string comentarios { get; set; }
+        [Column("FEC_COMENTARIOS")]
+        public DateTime fechaComentario { get; set; }
     }
 }

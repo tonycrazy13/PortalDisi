@@ -30,6 +30,7 @@
     <link href="Contenido/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Calibri:400,700" rel="stylesheet" type="text/css">
 
     <!--UiDialog Popups-->
     <link href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.5.9/css/ngDialog.css" rel="stylesheet" type="text/css">
@@ -43,15 +44,11 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                    <i class="glyphicon glyphicon-menu-hamburger"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"
+                <a id="btnHome" class="navbar-brand page-scroll navbar-right" href="#page-top"
                     style="padding-top: 7px;">
-                    <img class="navbar-brand" src="Contenido/img/logos/logodisi_negro.png" style="padding-top: 0; margin-top: 0;">
-                </a>
-                <a class="navbar-brand page-scroll"
-                    style="padding-top: 7px;">
-                    <img class="navbar-brand" src="Contenido/img/new/btn_clientes.png" style="padding-top: 0; margin-top: 0;">
+                    <img class="navbar-brand" src="Contenido/img/new/disiSinLey.png" style="padding-top: 0; margin-top: 0;">
                 </a>
             </div>
 
@@ -60,440 +57,245 @@
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#contactos">Contacto</a></li>
                     <li><a class="page-scroll" href="#nosotros">Nosotros</a></li>
-                    <!--<li><a class="page-scroll" onclick="window.open('pages/preguntas.html')">Faq</a></li>-->
+                    <li><a class="page-scroll" href="#contactos">¿Para quién es Disí?</a></li>
                     <li><a class="page-scroll" href="#cuestionario">Cuestionario</a></li>
-                    <li><a class="page-scroll" href="#aqui">Derechos y Privacidad</a></li>
-                    <li><a class="page-scroll glyphicon glyphicon-arrow-up" href="#page-top"></a></li>
+                    <li><a class="page-scroll"><button class="glyphicon glyphicon-earphone btnContacto"> (52-55) 53-95-4011</button></a></li>
+                    <li><a class="page-scroll"><button onclick="window.location.href='/http://172.16.1.29:90/'" class="btnCLientes">Acceso a Clientes</button></a></li>
+                    <!--<li><a class="page-scroll glyphicon glyphicon-arrow-up" href="#page-top"></a></li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        <div class="cotainer">
+            <hr class="hrCustom"/>
+        </div>
         <!-- /.container -->
     </nav>
     <header class="intro">
-        <div class="container">
-            <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 600px; overflow: hidden;">
-                <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px; width: 100%; height: 100%;">
-                    </div>
-                    <div style="position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
-                    </div>
-                </div>
-                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 600px; overflow: hidden;">
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda0.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda1.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda2.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda3.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda4.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda5.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda6.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda7.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda8.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda9.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda10.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div u="image" class="offer slideanim">
-                            <div class="row">
-                                <div class="offer-grid">
-                                    <section class="col-md-12 col-sm-12 offer1 slideanim">
-                                        <br />
-                                        <br />
-                                        <header class="offer-info">
-                                            <p class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                                            </p>
-                                        </header>
-                                        <img src="Contenido/img/new/leyenda11.png" width="70%" height="50%" />
-                                        <footer>
-                                            <a class="campaniasStyle titulosGraBold">
-                                                <img src="Contenido/img/new/botonDisi.png" width="10%" height="10%" />
-                                            </a>
-                                        </footer>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
-                    <div u="prototype"></div>
-                </div>
-                <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"></span>
-                <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"></span>
-            </div>
+        <div class="container text-center">
+        <section class="col-md-12 col-sm-12 offer1 slideanim">
+            <br />
+            <br />
+            <header class="offer-info">
+                <p class="campaniasStyle">
+                    <img src="Contenido/img/new/disiMed.png" width="30%" height="30%" />
+                </p>
+            </header>
+            <img src="Contenido/img/new/leyenda0.png" width="60%" height="60%" />
+            <br />
+            <a href="#">
+                <img ng-click="formulario();" src="Contenido/img/new/facturacion.png" width="10%" height="10%" />
+            </a>
+            <footer>
+                <label class="titulosNegro" style="font-size:20px">Cuando tus facturas son a plazo....<strong>tu recurso es </strong><img style="width: 20%; height:20%;" src="Contenido/img/new/disiPeq.png"/></label>
+            </footer>
+        </section>
         </div>
     </header>
     <section id="nosotros" class="fondoBlanco">
-        <div class="container text-center" <h1>es la primer plataforma digital que ofrece a los pequeños y medianos empresarios liquidez inmediata por sus facturas por cobrar a plazo.</h1>>
-            <section class="col-md-12 col-sm-12">
-                <br />
-                <br />
-                <div></div>
-                <header class="col-md-12 col-sm-12">
-                    <img class="text-left" src="Contenido/img/logos/logodisi_negro.png" width="15%" height="15%" />
-                    <img class="text-rigth" src="Contenido/img/new/botonDisi.png" width="15%" height="15%" />
-                </header>
-                <h1>es la primer plataforma digital que ofrece a los pequeños y medianos empresarios liquidez inmediata por sus facturas por cobrar a plazo.</h1>
-                <footer>
-                    
-                </footer>
-            </section>
+        <div style="padding: 40px">
+            <label> </label>
+        </div>
+        <div class="col-md-16 text-center">
+			<label class="btnPage">¿Qué es <img src="Contenido/img/new/disiSinLeyPeq.png" style="width: 30%; height:30%;"> ? </label>
+            <br /><br />
+            <label class="titulos text-justify" style="width:70%">Una solución financiera que permite convertir las facturas de las ventas a “plazo” en dinero en efectivo.</label>
+            <br /><br />
+            <label class="titulos text-justify" style="width:70%">Con el factoraje electrónico de DiSí, tu empresa recibe hoy el dinero de tus ventas a crédito; siempre tendrás la seguridad de tener los recursos necesarios para crecer tu negocio.</label>
+	        <br/><br />
+            <br/>
+			<div class="row fondoNew1">
+			    <label class="titulosBlancoBold"><img src="Contenido/img/new/disiSinLeyPeq.png" style="width: 25%; height:25%;"> es efectivo en facturas por cobrar</label>
+			</div>
         </div>
     </section>
+    <section id="facturahoy" class="fondoBlanco text-center">
+        <div style="padding: 40px">
+            <label> </label>
+        </div>
+        <div class="row">
+            <div class="col-md-16">
+			    <label class="titulosGra">Factura hoy, cobra hoy</label>
+                <a><img ng-click="formulario();" src="Contenido/img/new/facturacion.png" width="8%" height="8%"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img ng-click="formulario();" src="Contenido/img/new/flecha.png" width="50%" height="50%"/>
+                <label class="titulos20">Aprobamos tu crédito <br /> 6 días</label>
+            </div>
+            <div class="col-md-4">
+                <img ng-click="formulario();" src="Contenido/img/new/pesos.png" width="50%" height="50%"/>
+                <label class="titulos20">Flujo de efectivo justo cuando tú lo necesitas</label>
+            </div>
+            <div class="col-md-4">
+                <img ng-click="formulario();" src="Contenido/img/new/circulo.png" width="50%" height="50%"/>
+                <label class="titulos20">Tu línea de crédito <br />disponible</label>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <label class="labelAzul">Tu empresa vende a plazo o a crédito a tus clientes y debes esperar entre 30 y 120 días para que te den tu dinero.</label>
+        </div>
+        <div class="row fondoNew1">
+            <label class="titulosBlanco"><img src="Contenido/img/new/disiSinLeyPeq.png" style="width: 15%; height:15%;"> te da el poder de decir que SI</label><br />
+            <label class="titulosBlanco"><img src="Contenido/img/new/disiSinLeyPeq.png" style="width: 15%; height:15%;"> te da el poder de vender</label><br />
+            <label class="titulosBlanco"><img src="Contenido/img/new/disiSinLeyPeq.png" style="width: 10%; height:10%;"> a esa oportunidad que hará crecer tu negocio</label><hr style="width:80%" />
+            <label class="titulosBlancoBold">Que nada te detenga: <img src="Contenido/img/new/disiSinLeyPeq.png" style="width: 15%; height:15%;"></label><br />
+        </div>
+    </section>
+
+
+
+    <hr />
+    <hr />
     <section id="cuestionario" class="fondoBlanco">
         <br />
         <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-6 text-center">
+                    <img src="Contenido/img/logos/logodisi_negro.png" width="30%" height="30%" />
+                </div>
+                <div class="col-md-6 text-center">
+                    <a href="#">
+                        <img ng-click="formulario();" src="Contenido/img/new/facturacion.png" width="25%" height="25%" />
+                    </a>
+                </div>
+            </div>
             <div class="col-md-6">
-                <div style="background-color: #2D2B6B;" class="text-justify">
-                    <label>
-                        Leer las siguientes lineas te puede beneficiar mucho y solo te llevará unos pocos
-	        segundos. Nos Gustaria que empezaras por contestarte a ti mismo las siguientes preguntas:<label>
+                <div style="background-color: #0000FF; color:white" class="text-justify">
+                    <label class="titulosBlanco15">
+                        Leer las siguientes líneas te puede beneficiar mucho y solo te llevará unos pocos
+	        segundos. Nos gustaría que empezaras por contestarte a ti mismo las siguientes preguntas:<label>
                 </div>
                 <form>
                     <br />
-                    <div style="text-align: center;" class="row">
+                    <div class="row text-center">
                         <div class="row">
-                            <label class="labelAzulRey"><strong>¿Tu negocio expide Facturas a plazo?</strong></label>
+                            <label class="titulosNegro"><strong>¿Tu negocio expide facturas a plazo?</strong></label>
                             <br />
                             <label>
                                 <input type="radio" name="radio1" class="minimal" />
-                                <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;" />
+                                <img style="width: 30%; height:30%;" src="Contenido/img/new/disiPeq.png"/>
+                                <label class="titulosNegro"><strong>&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                                <input type="radio" name="radio1" class="minimal" />
+                                <label class="titulosNegro"><strong>Dí no</strong></label>
                             </label>
-                            <label style="color: #2D2B6B; font: menu;"><strong>ó </strong></label>
-                            <input type="radio" name="radio1" class="minimal" />
-                            <label style="color: #2D2B6B; font: menu;"><strong>Dí no</strong></label>
                         </div>
                         <div class="form-group">
-                            <label class="labelAzulRey"><strong>¿Esos pagos a plazo hacen que necesitesun flujo de efectivo?</strong></label><br />
+                            <label class="titulosNegro"><strong>¿Esos pagos a plazo hacen que necesites un flujo de efectivo?</strong></label><br />
+                            <br />
                             <label>
                                 <input type="radio" name="radio2" class="minimal" />
-                                <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;" />
+                                <img style="width: 30%; height:30%;" src="Contenido/img/new/disiPeq.png"/>
+                                <label class="titulosNegro"><strong>&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                                <input type="radio" name="radio2" class="minimal" />
+                                <label class="titulosNegro"><strong>Dí no</strong></label>
                             </label>
-                            <label style="color: #2D2B6B; font: menu;"><strong>ó </strong></label>
-                            <input type="radio" name="radio2" class="minimal" />
-                            <label style="color: #2D2B6B; font: menu;"><strong>Dí no</strong></label>
                         </div>
                         <div class="form-group">
-                            <label class="labelAzulRey"><strong>¿Las opciones de prestamo son comunmente inaccesibles?</strong></label><br />
+                            <label class="titulosNegro"><strong>¿Las opciones de préstamo son comunmente inaccesibles?</strong></label><br />
                             <label>
                                 <input type="radio" name="radio3" class="minimal" />
-                                <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;" />
+                                <img style="width: 30%; height:30%;" src="Contenido/img/new/disiPeq.png"/>
+                                <label class="titulosNegro"><strong>&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                                <input type="radio" name="radio3" class="minimal" />
+                                <label class="titulosNegro"><strong>Dí no</strong></label>
                             </label>
-                            <label style="color: #2D2B6B; font: menu;"><strong>ó </strong></label>
-                            <input type="radio" name="radio3" class="minimal" />
-                            <label style="color: #2D2B6B; font: menu;"><strong>Dí no</strong></label>
                         </div>
                         <div class="form-group">
-                            <label class="labelAzulRey"><strong>¿Los tramites de banco para otorgarte credito son molestos?</strong></label><br />
+                            <label class="titulosNegro"><strong>¿Los trámites de banco para otorgarte crédito son molestos?</strong></label><br />
+                            <br />
                             <label>
                                 <input type="radio" name="radio4" class="minimal" />
-                                <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;" />
+                                <img style="width: 30%; height:30%;" src="Contenido/img/new/disiPeq.png"/>
+                                <label class="titulosNegro"><strong>&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                                <input type="radio" name="radio4" class="minimal" />
+                                <label class="titulosNegro"><strong>Dí no</strong></label>
                             </label>
-                            <label style="color: #2D2B6B; font: menu;"><strong>ó </strong></label>
-                            <input type="radio" name="radio4" class="minimal" />
-                            <label style="color: #2D2B6B; font: menu;"><strong>Dí no</strong></label>
                         </div>
                         <div class="form-group">
-                            <label class="labelAzulRey"><strong>¿Cuando mas los necesitas los ejecutivo brillan por su aunsencia?</strong></label><br />
+                            <label class="titulosNegro"><strong>¿Cuando más los necesitas los ejecutivos brillan por su ausencia?</strong></label><br />
                             <label>
                                 <input type="radio" name="radio5" class="minimal" />
-                                <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;" />
+                                <img style="width: 30%; height:30%;" src="Contenido/img/new/disiPeq.png"/>
+                                <label class="titulosNegro"><strong>&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                                <input type="radio" name="radio5" class="minimal" />
+                                <label class="titulosNegro"><strong>Dí no</strong></label>
                             </label>
-                            <label style="color: #2D2B6B; font: menu;"><strong>ó </strong></label>
-                            <input type="radio" name="radio5" class="minimal" />
-                            <label style="color: #2D2B6B; font: menu;"><strong>Dí no</strong></label>
+                            
                         </div>
                         <div class="form-group">
-                            <label class="labelAzulRey"><strong>¿Quisieras tener un servicio en linea para tener efectivo mientras te pagan tus facturas?</strong></label><br />
+                            <label class="titulosNegro"><strong>¿Quisieras un servicio en línea para tener efectivo mientras te pagan tus facturas?</strong></label><br />
                             <label>
                                 <input type="radio" name="radio67" />
-                                <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 60px; height: 40px;" />
+                                <img style="width: 30%; height:30%;" src="Contenido/img/new/disiPeq.png"/>
+                                <label class="titulosNegro"><strong>&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;&nbsp;&nbsp;</strong></label>
+                                <input type="radio" name="radio6">
+                                <label class="titulosNegro"><strong>Dí no</strong></label>
                             </label>
-                            <label style="color: #2D2B6B; font: menu;"><strong>ó </strong></label>
-                            <input type="radio" name="radio6">
-                            <label style="color: #2D2B6B; font: menu;"><strong>Dí no</strong></label>
+                            
                         </div>
+                        <div class="form-group">
+                            <div>
+                                <label class="titulosNegro">
+                                <strong>Si respondiste sí a 3 o más preguntas a ti te conviene acercarte a </strong>
+                                <img style="width: 15%; height:15%;" src="Contenido/img/new/disiPeq.png"/><br />
+                                <strong>Llámanos estamos para servirte</strong><h1>
+                            </div>
+                        </div>
+                        <label class="labelAzulRey"><img style="width: 15%; height:15%;" src="Contenido/img/new/disiPeq.png"/> es efectivo en cuentas por cobrar.</label>
                     </div>
                 </form>
             </div>
             <div class="col-md-6 text-center">
                 <div class="row cuadroBorder">
-                    <label style="text-align: center; line-height: 40px;">
+                    <label style="text-align: center; line-height: 70px;" class="titulosNegro">
                         Sección de noticias<br />
                         Crédito<br />
                         Pyme<br />
                         Financiamiento<br />
                         Liquidez<br />
                         Facturas<br />
-                        Facturas Electronicas
+                        Facturas Electrónicas
 					  <br />
                         CFDI CFDIs<br />
                         Cuentas por cobrar<br />
                         Cuentas por pagar<br />
                         Factoraje<br />
                         Capital de Trabajo<br />
-                        Crédito de proovedores</label>
+                        Crédito proveedores
+                    </label>
                 </div>
-            </div>
-            <div>
-                <label class="labelAzulRey">
-                    <strong>Si dijiste 3 o mas preguntas a ti te conviene acercarte a </strong>
-                    <img src="ContenidoNew/img/logos/logodisi_negro.png" style="width: 50px; height: 40px;" /><br />
-                    <strong>Llamanos estamos para servirte</strong><h1>
             </div>
         </div>
 
     </section>
+    <hr />
+    <hr />
+    <section id="mejor">
+        <div class="col-md-16 text-center">
+            <label class="titulosNegro30"><img style="width: 20%; height:20%;" src="Contenido/img/new/disiPeq.png"/> es efectivo en cuentas por cobrar.</label>
+            <br /><br />
+            <label class="titulosNegro">¡ <img style="width: 15%; height:15%;" src="Contenido/img/new/disiPeq.png"/> a tener los recursos que tu negocio necesita!</label>
+            <br /><br />
+            <label class="titulosNegro">¡ <img style="width: 15%; height:15%;" src="Contenido/img/new/disiPeq.png"/> a ser un empresario exitoso!</label>
+            <br /><br />
+            <label class="titulosNegro">¡ YO empresario +  <img style="width: 15%; height:15%;" src="Contenido/img/new/disiPeq.png"/> =  Mejor YO!</label>
+            <br /><br />
+            <label class="titulosNegro">Que nada te detenga: <img style="width: 15%; height:15%;" src="Contenido/img/new/disiPeq.png"/></label>
+        </div>
+    </section>
+    <hr />
+    <hr />
+
     <!--FOOTER-->
-    <div class="fondoPages">
-        <div class="row">sss
-            <section id="contactos" class="container">
-                <div class="col-md-3" data-ng-repeat="sucu in sucursales">
-                    <article>
+    <div class="fondoBlanco">
+        <div class="container">
+            <section id="contactos" class="row text-center">
+                <div class="col-md-6" data-ng-repeat="sucu in sucursales">
+                    <article class="text-right">
                         <header>
                             <h3>{{sucu.titulo}}</h3>
                         </header>
@@ -504,8 +306,8 @@
                         <p class="titulosBlanco15">{{sucu.tel3}}</p>
                     </article>
                 </div>
-                <div class="col-md-3">
-                    <article class="fondoContacto">
+                <div class="col-md-6">
+                    <article class="fondoContacto text-left">
                         <header>
                             <h3 class="titulosNegro">Contacto</h3>
                         </header>
@@ -513,17 +315,17 @@
                             <a href="mailto:disi@disioperaciones.com" id="A2" class="icon titulosBlanco15">disi@disioperaciones.com</a>
                         </p>
                         <header>
-                            <h3 class="titulosNegro text-left">Encuéntranos</h3>
+                            <h3 class="titulosNegro">Encuéntranos</h3>
                         </header>
                         <div>
                             <a href="https://twitter.com/DisiCredito">
-                                <img src="Contenido/img/s_twiter.png" /></a>
+                                <img src="Contenido/img/s_twiter_azul.png" /></a>
                             <a href="https://www.facebook.com/Disicredito">
-                                <img src="Contenido/img/s_face.png" /></a>
+                                <img src="Contenido/img/s_face_azul.png" /></a>
                             <a>
-                                <img src="Contenido/img/s_in.png" /></a>
+                                <img src="Contenido/img/s_in_azul.png" /></a>
                             <a>
-                                <img src="Contenido/img/s_insta.png" /></a>
+                                <img src="Contenido/img/s_insta_azul.png" /></a>
                         </div>
                     </article>
                 </div>
@@ -533,11 +335,11 @@
         <hr />
         <div class="container text-center">
             <div class="menu">
-                <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">Aviso de privacidad</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">UNE</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CONDUSEF</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">CNBV</a> - 
-                    <a class="titulosBlanco15" href="Content/pdf/jsf.pdf" target="_blank">SHCP</a>
+                <a class="titulosPeq" href="Contenido/img/new/Aviso de Privacidad DISI.pdf" target="_blank">Aviso de privacidad</a> - 
+                    <a class="titulosPeq" href="Contenido/img/new/AVISO DE EXISTENCIA DE LA UNIDAD ESPECIALIZADA.pdf" target="_blank">UNE</a> - 
+                    <a class="titulosPeq" href="http://www.condusef.gob.mx" target="_blank">CONDUSEF</a> - 
+                    <a class="titulosPeq" href="http://www.cnbv.gob.mx" target="_blank">CNBV</a> - 
+                    <a class="titulosPeq" href="http://www.hacienda.gob.mx" target="_blank">SHCP</a>
             </div>
             <br />
             <div class="menu">

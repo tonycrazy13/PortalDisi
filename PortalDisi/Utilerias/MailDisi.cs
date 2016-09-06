@@ -5,6 +5,7 @@ using System.Net.Mime;
 using System.Threading;
 using System.ComponentModel;
 using PortalDisi.Models;
+using System.Web.Configuration;
 
 namespace PortalDisi.Utilerias
 {
@@ -12,6 +13,11 @@ namespace PortalDisi.Utilerias
     {
         public void send(Formulario form)
         {
+
+            var correoOrigen = WebConfigurationManager.AppSettings["CorreoOrigen"];
+            var contraseñaOrigen = WebConfigurationManager.AppSettings["ContraseñaOrigen"];
+            var Puerto = WebConfigurationManager.AppSettings["Puerto"];
+            var Host = WebConfigurationManager.AppSettings["Host"];
 
             MailMessage mmsg = new MailMessage();
             mmsg.To.Add(Constantes.MAIL_FIJO);//Fijo DISI
@@ -29,18 +35,13 @@ namespace PortalDisi.Utilerias
             mmsg.Body = htmlBody;
 
             mmsg.IsBodyHtml = false;
-            //mmsg.From = new MailAddress("disi@disioperaciones.com");
-            mmsg.From = new MailAddress(Constantes.USER_SMTP);
+            mmsg.From = new MailAddress(correoOrigen);
             SmtpClient cliente = new SmtpClient
             {
-                //Credentials = new NetworkCredential("disi@disioperaciones.com", "oVc&a630"),
-                //Port = 26,
-                //EnableSsl = true,
-                //Host = "mail.disioperaciones.com"
-                Credentials = new NetworkCredential(Constantes.USER_SMTP, Constantes.PASSWORD_SMTP),
-                Port = Constantes.PORT_SMTP,
-                EnableSsl = true,
-                Host = Constantes.SERVER_SMTP
+                Credentials = new NetworkCredential(correoOrigen, contraseñaOrigen),
+                Port = Convert.ToInt32(Puerto),
+                EnableSsl = false,
+                Host = Host
             };
             cliente.Send(mmsg);
             Console.WriteLine("Envio mail.");

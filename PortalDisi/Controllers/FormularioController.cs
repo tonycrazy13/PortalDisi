@@ -48,11 +48,11 @@ namespace PortalDisi.Controllers
                 }
                 if (form.tel == null)
                 {
-                    throw new Exception("Es necesario indicar Telefono Fijo");
+                    throw new Exception("Es necesario indicar Teléfono Fijo");
                 }
                 if (form.celular == null)
                 {
-                    throw new Exception("Es necesario indicar Telefono Celular");
+                    throw new Exception("Es necesario indicar Teléfono Celular");
                 }
                 if (form.comentarios == null)
                 {
@@ -67,9 +67,10 @@ namespace PortalDisi.Controllers
             MailDisi mail = new MailDisi(); 
             mail.send(form);
 
-            int sequence = db.Database.SqlQuery<int>("SELECT DISIOPERACIONES.CAT_FORMULARIO_SEQ.NEXTVAL FROM DUAL").FirstOrDefault();
+            int sequence = db.Database.SqlQuery<int>("SELECT SYSTEM.SEC_ID_FORMULARIO.NEXTVAL FROM DUAL").FirstOrDefault();
             db.Formularios.Add(form);
             form.id = sequence;
+            form.fechaComentario = DateTime.Now;
             form.idEstado = 1;
             db.SaveChanges();
 
