@@ -370,6 +370,7 @@
     <Content Include="Contenido\css\bootstrap.css" />
     <Content Include="Contenido\css\bootstrap.min.css" />
     <Content Include="Contenido\css\carousel.css" />
+    <Content Include="Contenido\css\check-radio.css" />
     <Content Include="Contenido\css\grayscale.css" />
     <Content Include="Contenido\css\main.css" />
     <Content Include="Contenido\css\slider.css" />
@@ -435,18 +436,33 @@
     <Content Include="Contenido\img\logos\Home_PuntoBlanco.jpg" />
     <Content Include="Contenido\img\logos\logodisi_negro.png" />
     <Content Include="Contenido\img\logos\LOGO_DISI2.png" />
+    <Content Include="Contenido\img\new\acceso_clientes.png" />
     <Content Include="Contenido\img\new\botonDisi.png" />
     <Content Include="Contenido\img\new\btnAccesoClientes.png" />
     <Content Include="Contenido\img\new\btn_acceso_clientes.png" />
-    <Content Include="Contenido\img\new\circulo.png" />
+    <Content Include="Contenido\img\new\disi1.png" />
+    <Content Include="Contenido\img\new\disi2.png" />
+    <Content Include="Contenido\img\new\disi3.png" />
+    <Content Include="Contenido\img\new\disi4.png" />
     <Content Include="Contenido\img\new\disiMed.png" />
     <Content Include="Contenido\img\new\disiPeq.png" />
     <Content Include="Contenido\img\new\disiSinLey.png" />
     <Content Include="Contenido\img\new\disiSinLeyPeq.png" />
     <Content Include="Contenido\img\new\facturacion.png" />
-    <Content Include="Contenido\img\new\flecha.png" />
+    <Content Include="Contenido\img\new\flechaAbajo.png" />
+    <Content Include="Contenido\img\new\flechaAbajoHover.png" />
+    <Content Include="Contenido\img\new\icono_billete.png" />
+    <Content Include="Contenido\img\new\icono_flechas.png" />
+    <Content Include="Contenido\img\new\icono_paloma.png" />
     <Content Include="Contenido\img\new\leyenda0.png" />
-    <Content Include="Contenido\img\new\pesos.png" />
+    <Content Include="Contenido\img\new\linea_azul-lg.png" />
+    <Content Include="Contenido\img\new\linea_azul.png" />
+    <Content Include="Contenido\img\new\linea_blanca.png" />
+    <Content Include="Contenido\img\new\mejor_disi.png" />
+    <Content Include="Contenido\img\new\paloma_azul.png" />
+    <Content Include="Contenido\img\new\paloma_blanca.png" />
+    <Content Include="Contenido\img\new\paraquien_disi.png" />
+    <Content Include="Contenido\img\new\tel.jpg" />
     <Content Include="Contenido\img\personas.jpg" />
     <Content Include="Contenido\img\map-marker.png" />
     <Content Include="Contenido\img\s_face.png" />
@@ -708,6 +724,7 @@
     <Content Include="Scripts\ui-bootstrap-custom-1.3.2.min.js" />
     <Content Include="Scripts\ui-bootstrap-custom-tpls-1.3.2.js" />
     <Content Include="Scripts\ui-bootstrap-custom-tpls-1.3.2.min.js" />
+    <None Include="Views\Home\_formulario.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

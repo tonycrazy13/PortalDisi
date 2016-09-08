@@ -37,8 +37,14 @@
 
 .titulosNegro {
 	font-family: Calibri;
-    font-weight: bold;
     font-size: 20px;
+	color: black;
+}
+
+.titulosNegroBold {
+	font-family: Calibri;
+    font-weight: bold;
+    font-size: 25px;
 	color: black;
 }
 
@@ -46,6 +52,19 @@
 	font-family: Calibri;
     font-weight: bold;
     font-size: 30px;
+	color: black;
+}
+
+.titulosNegro60 {
+	font-family: Calibri;
+    font-weight: bold;
+    font-size: 60px;
+	color: black;
+}
+.titulosNegro40 {
+	font-family: Calibri;
+    font-weight: bold;
+    font-size: 40px;
 	color: black;
 }
 
@@ -294,9 +313,17 @@ input[type="button"],input[type="submit"] {
     font-size: 25px;
 	color: #528ABB;
 }
+
+.titulosBla {
+	font-family: Calibri;
+    font-size: 25px;
+	color: white; 
+}
+
 .titulosGra {
 	font-family: Calibri;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: bold;
 	color: #528ABB;
 }
 .titulosPeq {
@@ -313,9 +340,16 @@ input[type="button"],input[type="submit"] {
 
 .labelAzul {
 	font-family: Calibri;
-	font-weight: bold;
-	color: rgb(65, 113, 156);
-    font-size: 18px;
+	color: #00A3E3;
+    font-size: 25px;
+}
+.labelAzul60 {
+	font-family: Calibri;
+	color: #00A3E3;
+    font-style: normal;
+	font-variant: normal;
+    font-weight: bold;
+    font-size: 60px;
 }
 
 .labelAzulRey {
@@ -331,9 +365,9 @@ input[type="button"],input[type="submit"] {
 	color: white;
 }
 
-.titulosBlanco15 {
+.titulosBlanco25 {
 	font-family: Calibri;
-    font-size: 15px;
+    font-size: 25px;
 	color: white;
 }
 
@@ -349,6 +383,12 @@ input[type="button"],input[type="submit"] {
 	color: white;
 }
 
+.titulosBlanco40Bold {
+	font-family: Calibri;
+    font-weight: bold;
+    font-size: 40px;
+	color: white;
+}
 
 .panel1 {
     border-radius: 4px 63px 4px 63px;
@@ -456,8 +496,13 @@ input[type="button"],input[type="submit"] {
     background: #74AFF5;
 }
 
+.fondoNew2 {
+    padding: 50px 0px;
+    background: #5282C2;
+}
+
 .btnPage {
-    background-color: rgb(65, 113, 156);
+    background-color: #2E75B6;
     color: white;
     border-radius: 8px;
     border: 2px solid rgb(65, 113, 156);
@@ -496,4 +541,24 @@ input[type="button"],input[type="submit"] {
     background-color: #E7E7E7;
     border-radius: 8px;
     padding: 8px 13px;
+}
+
+.btnAbajo {  
+    background-image: url(../img/new/flechaAbajo.png);
+    background-repeat: no-repeat;
+    align-content:center;
+}
+
+.btnAbajo {
+	background-image: url("../img/new/flechaAbajoHover.png");
+    background-repeat: no-repeat;
+    align-content:center;
+}
+
+.leftCenterTit {
+    padding-left: 230px;
+}
+
+.leftCenter {
+    padding-left: 200px;
 }
