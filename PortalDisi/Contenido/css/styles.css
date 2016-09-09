@@ -343,6 +343,16 @@ input[type="button"],input[type="submit"] {
 	color: #00A3E3;
     font-size: 25px;
 }
+
+.labelAzul40 {
+	font-family: Calibri;
+	color: #00A3E3;
+    font-style: normal;
+	font-variant: normal;
+    font-weight: bold;
+    font-size: 40px;
+}
+
 .labelAzul60 {
 	font-family: Calibri;
 	color: #00A3E3;

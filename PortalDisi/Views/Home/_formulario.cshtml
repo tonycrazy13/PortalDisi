@@ -1,24 +1,25 @@
-﻿<form name="formEnvia">
+﻿<form name="formEnvia" style="padding: 0 20px 0 20px">
+    <h2 class="titulosBlanco">¡Contáctanos!</h2><br />
     <div class="form-group">
-        <input class="form-control labelAzul" placeholder="Empresa" name="empresa" ng-model="empresa"  type="text" required>
+        <input class="form-control labelAzul" placeholder="Nombre(s):*" name="nombreContacto"  ng-model="nombreContacto" type="text" required>
     </div>
     <div class="form-group">
-        <input class="form-control labelAzul" placeholder="Ocupación" name="ocupacion" ng-model="ocupacion" type="text" required>
+        <input class="form-control labelAzul" placeholder="Apellido:*" name="ocupacion" ng-model="ocupacion" type="text" required>
+    </div>    
+    <div class="form-group">
+        <input class="form-control labelAzul" placeholder="Empresa:*" name="empresa" ng-model="empresa"  type="text" required>
     </div>
     <div class="form-group">
-        <input class="form-control labelAzul" placeholder="Nombre de Contacto" name="nombreContacto"  ng-model="nombreContacto" type="text" required>
+        <input class="form-control labelAzul" placeholder="Correo:*" name="correo" ng-model="correo" type="text" required>
     </div>
     <div class="form-group">
-        <input class="form-control labelAzul" placeholder="Correo Electrónico" name="correo" ng-model="correo" type="text" required>
+        <input class="form-control labelAzul" placeholder="Teléfono:*" name="telFijo" ng-model="telFijo" type="text" required>
     </div>
-    <div class="form-group">
-        <input class="form-control labelAzul" placeholder="Teléfono Fijo" name="telFijo" ng-model="telFijo" type="text" required>
-    </div>
-    <div class="form-group">
+    @*<div class="form-group">
         <input class="form-control labelAzul" placeholder="Teléfono Celular" name="telCel" ng-model="telCel" type="text" required>
-    </div>
+    </div>*@
     <div class="form-group">
-        <textarea class="form-control labelAzul" placeholder="¿A qué se dedica?" name="comentario" ng-model="comentario" rows="5" required></textarea>
+        <textarea class="form-control labelAzul" placeholder="Comentarios:*" name="comentario" ng-model="comentario" rows="5" required></textarea>
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-success btn-lg" button-spinner="loading" ng-click="enviar()">Enviar</button>

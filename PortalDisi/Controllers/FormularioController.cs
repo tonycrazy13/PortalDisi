@@ -30,17 +30,17 @@ namespace PortalDisi.Controllers
         {
             try
             {
-                if (form.empresa == null)
-                {
-                    throw new Exception("Es necesario indicar Empresa");
-                }
-                if (form.ocupacion == null)
-                {
-                    throw new Exception("Es necesario indicar Ocupación");
-                }
                 if (form.nombre == null)
                 {
                     throw new Exception("Es necesario indicar Nombre");
+                }
+                if (form.ocupacion == null)
+                {
+                    throw new Exception("Es necesario indicar Apellido");
+                }
+                if (form.empresa == null)
+                {
+                    throw new Exception("Es necesario indicar Empresa");
                 }
                 if (form.correo== null)
                 {
@@ -50,10 +50,10 @@ namespace PortalDisi.Controllers
                 {
                     throw new Exception("Es necesario indicar Teléfono Fijo");
                 }
-                if (form.celular == null)
-                {
-                    throw new Exception("Es necesario indicar Teléfono Celular");
-                }
+                //if (form.celular == null)
+                //{
+                //    throw new Exception("Es necesario indicar Teléfono Celular");
+                //}
                 if (form.comentarios == null)
                 {
                     throw new Exception("Es necesario indicar Comentario");
@@ -64,15 +64,19 @@ namespace PortalDisi.Controllers
                 e.GetBaseException();
                 return e.Message ;
             }
-            MailDisi mail = new MailDisi(); 
-            mail.send(form);
-
+            
             int sequence = db.Database.SqlQuery<int>("SELECT SYSTEM.SEC_ID_FORMULARIO.NEXTVAL FROM DUAL").FirstOrDefault();
+
             db.Formularios.Add(form);
             form.id = sequence;
+            form.nombre = form.nombre + " " + form.ocupacion;
+            form.ocupacion = null;
             form.fechaComentario = DateTime.Now;
             form.idEstado = 1;
             db.SaveChanges();
+
+            MailDisi mail = new MailDisi();
+            mail.send(form);
 
             return "OK";
         }

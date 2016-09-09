@@ -25,12 +25,10 @@ namespace PortalDisi.Utilerias
             //Asunto
             mmsg.Subject = "Información de Factoraje DiSí ";
             mmsg.IsBodyHtml = true;
-            string htmlBody;
-            htmlBody = "\n EMPRESA:" + form.empresa;
-            htmlBody += "\n OCUPACION:" + form.ocupacion;
-            htmlBody += "\n NOMBRE DE CONTACTO:" + form.nombre;
-            htmlBody += "\n TELEFONO FIJO:" + form.tel;
-            htmlBody += "\n TELEFONO CELULAR:" + form.celular;
+            string htmlBody = "";
+            htmlBody += "\n NOMBRE :" + form.nombre;
+            htmlBody += "\n EMPRESA:" + form.empresa;
+            htmlBody += "\n TELEFONO:" + form.tel;
             htmlBody += "\n \n" + form.comentarios;
             mmsg.Body = htmlBody;
 
