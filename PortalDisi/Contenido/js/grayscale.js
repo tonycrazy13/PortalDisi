@@ -8,10 +8,10 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $("#btnHome").show();
+        //$("#btnHome").show();
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $("#btnHome").hide();
+        //$("#btnHome").hide();
     }
 });
 

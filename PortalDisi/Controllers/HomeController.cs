@@ -17,5 +17,29 @@ namespace PortalDisi.Controllers
             var list = new List<Campania>();
             return View(list);
         }
+        public ActionResult Nosotros()
+        {
+            //var list = db.Campanias.Where(c => c.activo == 1).ToList();
+
+            return View();
+        }
+        public ActionResult Paraque()
+        {
+            //var list = db.Campanias.Where(c => c.activo == 1).ToList();
+
+            return View();
+        }
+        public ActionResult Cuestionario()
+        {
+            //var list = db.Campanias.Where(c => c.activo == 1).ToList();
+
+            return View();
+        }
+        public ActionResult Contacto()
+        {
+            //var list = db.Campanias.Where(c => c.activo == 1).ToList();
+
+            return View();
+        }
     }
 }

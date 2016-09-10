@@ -1,0 +1,67 @@
+﻿@Html.Partial("_menu")
+
+<section id="contacto" class="fondoBlanco">
+    <div style="padding: 40px">
+        <label> </label>
+    </div>
+    <div class="text-center">
+        <label class="btnPage" style="width:400px">Contacto</label>
+        <br /><br />
+        <label class="fondoNew2">
+            <div style="width:400px">
+                @Html.Partial("_formularioAct")
+            </div>
+        </label>
+        <br /><br />
+        <p>
+            <a class="labelAzul40" href="mailto:disi@disioperaciones.com" id="A2" class="icon titulosBlanco15">disi@disioperaciones.com</a>
+        </p>
+    </div>
+</section>
+<!--FOOTER-->
+<div class="fondoBlanco">
+    <div class="container text-center">
+        <section id="contactos" class="row">
+            <div class="col-md-12" data-ng-repeat="sucu in sucursales">
+                <article class="text-center">
+                    <img src="~/Contenido/img/new/linea_azul.png"/>
+                    <header>
+                        <h3 class="titulosNegro30">{{sucu.titulo}}</h3>
+                    </header>                    
+                    <label class="titulosBlanco15">{{sucu.marcacion}}</label><br />
+                    <label class="titulosBlanco15">{{sucu.tel1}}</label><br />
+                    <label class="titulosBlanco15">{{sucu.tel2}}</label><br />
+                    <label class="titulosBlanco15">{{sucu.tel3}}</label><br />
+                </article>
+            </div>
+        </section>
+        <label class="labelAzul">La distancia más corta para tener efectivo de tus ventas a plazos es el servicio en línea de  <img src="~/Contenido/img/new/disi3.png"></label><br />
+        <br />
+        <img src="~/Contenido/img/new/linea_azul.png"/><br />
+        <label class="titulosNegro30">Encuéntranos<br />
+        <div>
+            <a href="https://twitter.com/DisiCredito">
+                <img src="~/Contenido/img/s_twiter_azul.png" /></a>
+            <a href="https://www.facebook.com/Disicredito">
+                <img src="~/Contenido/img/s_face_azul.png" /></a>
+            <a>
+                <img src="~/Contenido/img/s_in_azul.png" /></a>
+            <a>
+                <img src="~/Contenido/img/s_insta_azul.png" /></a>
+        </div>
+        <img src="~/Contenido/img/new/linea_azul.png"/>
+    </div>
+    <div class="text-center">
+        <div class="menu">
+            <a class="labelAzul" href="~/Contenido/img/new/Aviso de Privacidad DISI.pdf" target="_blank">Aviso de privacidad</a> - 
+                <a class="labelAzul" href="~/Contenido/img/new/AVISO DE EXISTENCIA DE LA UNIDAD ESPECIALIZADA.pdf" target="_blank">UNE</a> - 
+                <a class="labelAzul" href="http://www.condusef.gob.mx" target="_blank">CONDUSEF</a> - 
+                <a class="labelAzul" href="http://www.cnbv.gob.mx" target="_blank">CNBV</a> - 
+                <a class="labelAzul" href="http://www.hacienda.gob.mx" target="_blank">SHCP</a>
+        </div>
+        <br />
+        <div class="menu fondoNew1">
+            <a class="row titulosBlanco">Disí Operaciones Empresariales SAPI de CV SOFOM ENR es una entidad financiera regulada y registrada<br /> en la CONDUSEF Y CNBV</a>
+        </div>
+    </div>
+</div>

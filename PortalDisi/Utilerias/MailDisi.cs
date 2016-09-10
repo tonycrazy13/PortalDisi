@@ -20,7 +20,7 @@ namespace PortalDisi.Utilerias
             var Host = WebConfigurationManager.AppSettings["Host"];
 
             MailMessage mmsg = new MailMessage();
-            //mmsg.To.Add(Constantes.MAIL_FIJO);//Fijo DISI
+            mmsg.To.Add(Constantes.MAIL_FIJO);
             mmsg.To.Add(form.correo);
             //Asunto
             mmsg.Subject = "Información de Factoraje DiSí ";

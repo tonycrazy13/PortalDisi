@@ -1,3 +1,15 @@
+@media (min-width: 1240px) {
+  .container2 {
+    width: 60%;
+    text-align:center;
+  }
+}
+@media (min-width: 640px) {
+  .container2 {
+    width: 60%;
+    text-align:center;
+  }
+}
 .fondoPages {
 	position: relative;
 	background-image: url("../img/Fondo_Blanco.jpg");
@@ -568,6 +580,12 @@ input[type="button"],input[type="submit"] {
 .leftCenterTit {
     padding-left: 230px;
 }
+
+.leftCenter350 {
+    padding-left: 350px;
+}
+
+
 
 .leftCenter {
     padding-left: 200px;
