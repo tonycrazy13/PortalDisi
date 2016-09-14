@@ -47,6 +47,13 @@
     align-content:center;
 }
 
+.titulosNegroST {
+	font-family: Calibri;
+    font-weight: normal;
+    font-size: 25px;
+	color: black;
+}
+
 .titulosNegro {
 	font-family: Calibri;
     font-size: 20px;
