@@ -1,13 +1,11 @@
 @media (min-width: 1240px) {
   .container2 {
-    width: 60%;
-    text-align:center;
+    width: 100%;
   }
 }
 @media (min-width: 640px) {
   .container2 {
-    width: 60%;
-    text-align:center;
+    width: 100%;
   }
 }
 .fondoPages {
@@ -361,6 +359,13 @@ input[type="button"],input[type="submit"] {
 	font-family: Calibri;
 	color: #00A3E3;
     font-size: 25px;
+}
+
+
+.labelAzul15 {
+	font-family: Calibri;
+	color: #00A3E3;
+    font-size: 15px;
 }
 
 .labelAzul40 {

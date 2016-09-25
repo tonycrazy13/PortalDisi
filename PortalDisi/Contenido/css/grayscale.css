@@ -70,7 +70,8 @@ a:focus {
     /*text-transform: uppercase;*/
     font-family: Calibri;
     color: white;
-    background: rgba(65, 113, 156,0.4);
+    /*background: rgba(65, 113, 156,0.4);*/
+    background: rgba(0, 0, 0,0.5);
 }
 
 .navbar-custom .navbar-brand {
@@ -141,8 +142,8 @@ a:focus {
     /*MENU AL DESPLAZARSE*/
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        /*border-bottom: 1px solid rgba(65, 113, 156,0.3);*/
-        /*background: rgba(65, 113, 156,0.4);*/
+        border-bottom: 1px solid rgba(65, 113, 156,0.3);
+        background: rgba(0, 0, 0,0.5);
     }
 }
 
